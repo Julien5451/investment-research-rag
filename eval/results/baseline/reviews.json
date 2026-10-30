@@ -1,0 +1,98 @@
+{
+  "a01": {
+    "correct": true,
+    "note": "Correct date (September 27, 2025) with a verified alternative source on PDF page80; annotated gold page1 was not retrieved, so page Recall remains0."
+  },
+  "a02": {
+    "correct": true,
+    "note": "Correct operating system macOS; citation matches physical PDF page4."
+  },
+  "a03": {
+    "correct": true,
+    "note": "All five reportable geographic segments are correct; source on page50 repeats the gold statement on page5."
+  },
+  "a04": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. Gold page5 states direct40% and indirect60%; raw top3 did not include that page."
+  },
+  "a05": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. Gold page7 states approximately166,000FTE employees; raw top3 missed the gold page."
+  },
+  "a06": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question: source-validation failure despite gold page7 appearing in retrieval."
+  },
+  "a07": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question: source-validation failure; page25 contains lower iPhone sales partly offset by higher Mac sales."
+  },
+  "a08": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. Separate diagnostic established the generated quote matches source wording after whitespace collapse, but strict raw substring validation rejected it."
+  },
+  "a09": {
+    "correct": true,
+    "note": "Correct iPhone FY2025 net sales USD209,586million with units; page39 contains an alternative disaggregated-sales table."
+  },
+  "a10": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question: source-validation failure; FY2025 Mac sales were USD33,708million."
+  },
+  "a11": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question: source-validation failure; gold table on page27 states Services margin75.4%."
+  },
+  "a12": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. Gold page27 states total gross margin46.9%; raw top3 missed that page."
+  },
+  "a13": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. Gold page27 gives R&Dexpense USD34,550million; retrieving another chunk on that page is not proof the amount reached context."
+  },
+  "a14": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question: source-validation failure; headcount-related expenses and infrastructure-related costs are stated on page27."
+  },
+  "a15": {
+    "correct": true,
+    "note": "Correct FY2025 effective tax rate15.6%; cited table on page28."
+  },
+  "a16": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question: source-validation failure; gold page28 provides combined balance USD132.4billion."
+  },
+  "a17": {
+    "correct": true,
+    "note": "Correct FY2025 net income USD112,010million; cited page33 repeats the statement amount on gold page32."
+  },
+  "a18": {
+    "correct": true,
+    "note": "Correct FY2025 diluted EPS USD7.46; cited page39 contains the per-share disclosure."
+  },
+  "u01": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded 2025 annual report does not establish exact future FY2026 sales."
+  },
+  "u02": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded report does not separately disclose Vision Pro net sales."
+  },
+  "u03": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded report does not disclose an exact FY2025 iPhone unit shipment count."
+  },
+  "u04": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded Apple annual report does not report Microsoft Azure's FY2025 revenue."
+  },
+  "u05": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded annual report does not provide that later daily closing stock price."
+  },
+  "u06": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded annual report does not separately disclose total generative-AI model training costs."
+  }
+}

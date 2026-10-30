@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "run": {
+    "dataset_name": "Apple FY2025 annual-report QA / curated 24-question development benchmark",
+    "mode": "live",
+    "status": "complete",
+    "repeat": 3,
+    "started_at_shanghai": "2026-10-30T04:48:16.460605+08:00",
+    "started_at_utc": "2026-10-29T20:48:16.460649+00:00",
+    "chat_model": "gpt-4o-mini",
+    "embedding_model": "text-embedding-3-small",
+    "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+    "qa_source_sha256": "d07882357fed4332abf245d2bd0192165c048ce516abc134ac5118dacc2fda96",
+    "prompt_sha256": "b5e440f5c2243ee309ea5a06cc160402c077d00e276613acc54c10d6cd394486",
+    "documents": [
+      {
+        "document_name": "apple_2025_10k.pdf",
+        "url": "https://s2.q4cdn.com/470004039/files/doc_financials/2025/ar/_10-K-2025-As-Filed.pdf",
+        "sha256": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de",
+        "company": "Apple Inc.",
+        "fiscal_year": 2025,
+        "pages": 80,
+        "source_page": "https://investor.apple.com/investor-relations/default.aspx"
+      }
+    ],
+    "retrieval_method": "dense",
+    "top_k": 3,
+    "max_context_chars": 16000,
+    "min_relevance_score": 0.35,
+    "selection": {
+      "schema_version": 1,
+      "state": "candidate_frozen_before_end_to_end_and_holdout",
+      "frozen_at_utc": "2026-10-29T20:43:38.576740+00:00",
+      "retrieval_method": "dense",
+      "top_k": 5,
+      "min_relevance_score": 0.35,
+      "max_context_chars": 16000,
+      "chat_model": "gpt-4o-mini",
+      "embedding_model": "text-embedding-3-small",
+      "citation_retry_limit": 0,
+      "rationale": "Dense5 adds one fully supported question vsDense3; hybrid has no evidence-recall benefit at either k and adds sparse startup/ranking cost. Keep hybrid experimental only; trial generic completeness/table-copy prompt.",
+      "interventions": [
+        "Top3 toTop5 (more available context)",
+        "generic multipart completeness and contiguous table-copy prompt"
+      ],
+      "unchanged": [
+        "corpus/chunkIDs/text/metadata",
+        "models",
+        "gold/rubric",
+        "cosine threshold0.35",
+        "citationvalidator",
+        "maxcontext16000"
+      ],
+      "retrieval_experiment": {
+        "schema_version": 1,
+        "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+        "embedding_fingerprint": "66802fe19d8a715bb1e6e3ef9fb75460ce1186353f6b80c090443d9cd03522df",
+        "corpus_chunks": 467,
+        "candidate_k": 20,
+        "rrf_k": 60,
+        "min_relevance_score": 0.35,
+        "max_context_chars": 16000,
+        "query_embedding_batch_seconds": 3.0795665749974432,
+        "sparse_startup_seconds": 0.8895917129993904,
+        "latency_scope": "Local ranking only with the same cached real query vectors. Batch embedding time reported separately, not divided into query latency.",
+        "top_k_tradeoff": "Top5 may supply up to5000 chunk characters vs3000 forTop3, under the same16000-character cap; not a single-variable context comparison.",
+        "summaries": [
+          {
+            "method": "dense",
+            "top_k": 3,
+            "questions": 24,
+            "verified_answerable_questions": 18,
+            "page_recall": 0.7222222222222222,
+            "evidence_recall": 0.6666666666666666,
+            "filtered_evidence_recall": 0.6666666666666666,
+            "fully_supported_questions": 12,
+            "fully_supported_after_filtering": 12,
+            "mean_ranking_seconds": 0.017824598083583016,
+            "mean_context_chars": 2314.6666666666665,
+            "mean_relevant_chunks_surviving": 1
+          },
+          {
+            "method": "dense",
+            "top_k": 5,
+            "questions": 24,
+            "verified_answerable_questions": 18,
+            "page_recall": 0.7222222222222222,
+            "evidence_recall": 0.7222222222222222,
+            "filtered_evidence_recall": 0.7222222222222222,
+            "fully_supported_questions": 13,
+            "fully_supported_after_filtering": 13,
+            "mean_ranking_seconds": 0.017388155208209355,
+            "mean_context_chars": 3710.875,
+            "mean_relevant_chunks_surviving": 1.1666666666666667
+          },
+          {
+            "method": "hybrid",
+            "top_k": 3,
+            "questions": 24,
+            "verified_answerable_questions": 18,
+            "page_recall": 0.5,
+            "evidence_recall": 0.6666666666666666,
+            "filtered_evidence_recall": 0.6666666666666666,
+            "fully_supported_questions": 12,
+            "fully_supported_after_filtering": 12,
+            "mean_ranking_seconds": 0.021298354291805783,
+            "mean_context_chars": 2306.5833333333335,
+            "mean_relevant_chunks_surviving": 0.9444444444444444
+          },
+          {
+            "method": "hybrid",
+            "top_k": 5,
+            "questions": 24,
+            "verified_answerable_questions": 18,
+            "page_recall": 0.7222222222222222,
+            "evidence_recall": 0.7222222222222222,
+            "filtered_evidence_recall": 0.7222222222222222,
+            "fully_supported_questions": 13,
+            "fully_supported_after_filtering": 13,
+            "mean_ranking_seconds": 0.02465444266696674,
+            "mean_context_chars": 3799.4583333333335,
+            "mean_relevant_chunks_surviving": 1.3888888888888888
+          }
+        ]
+      },
+      "source_hashes": {
+        "src/research_qa/qa.py": "708f982d14c61c5c2bd6aa3960ec909ea220ed5faade9ce8566a121a62d5d015",
+        "src/research_qa/retrieval.py": "9330ae31074b1222acb03d014ffce1da1e5f23728e136e361b8adbe6edb7c3ab",
+        "src/research_qa/index.py": "2819661b163d7255c80b88f022a2515ee6df6122a2223c84d154ce134951e9d3",
+        "src/research_qa/ingestion.py": "3cc15c83c8a227630d0957056d974629041f53f4eb883171ae9333a110319145",
+        "uv.lock": "78f36008acd45c6ef17f6b5160fd767511b55f0e0aae991ed810cd51346d68ac"
+      },
+      "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+      "evidence_labels_sha256": "4b91036878343a5b810b135d6899aadfdca6528bbe7dfc92f3ca172eed8aa9b9",
+      "holdout_dataset_sha256": "95af2280b3b86e8e44032a7f47b0cbd43a578bafe065620f9ced89f444a528ac",
+      "holdout_selection_policy": "No holdout retrieval or chat outputs observed before freeze; no implementation or parameter tuning on holdout results."
+    },
+    "sparse_startup_seconds": 3.910026862286031e-07,
+    "paired_order": "Alternate which variant goes first by question and repeat parity",
+    "latency_scope": "Full live query embedding, retrieval, generation and validation; no HTTP/UI or indexing; BM25 startup recorded separately.",
+    "citation_validity_scope": "Returned raw source identity and substring; not a semantic-entailment guarantee.",
+    "finished_at_utc": "2026-10-29T20:49:42.042192+00:00"
+  },
+  "counts": {
+    "questions": 24,
+    "answerable": 18,
+    "unanswerable": 6,
+    "errors": 0,
+    "abstained": 12,
+    "false_refusals": 6,
+    "correct_refusals": 6,
+    "abstention_reasons": {
+      "model_insufficient_evidence": 10,
+      "unverifiable_citation": 2
+    },
+    "reviewed": 24,
+    "review_complete": true
+  },
+  "metrics": {
+    "recall_at_3": 0.7222222222222222,
+    "page_hit_at_3": 0.7222222222222222,
+    "automatic_answer_accuracy": 0.7083333333333334,
+    "automatic_answerable_accuracy": 0.6111111111111112,
+    "reviewed_accuracy": 0.7083333333333334,
+    "reviewed_answerable_accuracy": 0.6111111111111112,
+    "reviewed_subset_accuracy": 0.7083333333333334,
+    "answer_accuracy": 0.7083333333333334,
+    "answer_accuracy_method": "agent_adjudicated",
+    "correct_refusal_rate": 1.0,
+    "false_refusal_rate": 0.3333333333333333,
+    "abstention_precision": 0.5,
+    "error_rate": 0.0,
+    "latency_seconds": {
+      "ask": {
+        "count": 24,
+        "mean": 1.6855814119583858,
+        "p50": 1.7259914019996359,
+        "p95": 2.145338321152667
+      },
+      "retrieval": {
+        "count": 24,
+        "mean": 0.4245303793759376,
+        "p50": 0.4239470660031657,
+        "p95": 0.4398374595475616
+      },
+      "failed_ask": {
+        "count": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null
+      }
+    },
+    "page_recall_at_k": 0.7222222222222222,
+    "evidence_recall_at_3": 0.6666666666666666,
+    "full_evidence_support_at_3": 0.6666666666666666,
+    "evidence_recall_at_k": 0.6666666666666666,
+    "full_evidence_support_at_k": 0.6666666666666666,
+    "evidence_recall_after_filter_at_k": 0.6666666666666666,
+    "full_evidence_support_after_filter_at_k": 0.6666666666666666,
+    "relevant_chunks_surviving_filter_mean": 1,
+    "evidence_label_coverage": {
+      "at_3": {
+        "verified_question_trials": 18,
+        "answerable_question_trials": 18,
+        "coverage": 1.0
+      },
+      "at_k": {
+        "verified_question_trials": 18,
+        "answerable_question_trials": 18,
+        "coverage": 1.0
+      },
+      "after_filter_at_k": {
+        "verified_question_trials": 18,
+        "answerable_question_trials": 18,
+        "coverage": 1.0
+      }
+    },
+    "returned_citation_validity": 1.0,
+    "returned_citation_counts": {
+      "valid": 12,
+      "total": 12
+    },
+    "raw_model_quote_validity": 0.8571428571428571,
+    "raw_model_exact_quote_validity": 0.5,
+    "raw_model_quote_counts": {
+      "available": true,
+      "valid": 12,
+      "exact": 7,
+      "total": 14,
+      "generations": 24,
+      "unparseable_generations": 0
+    },
+    "context_characters": {
+      "count": 24,
+      "mean": 2314.6666666666665,
+      "p50": 2380.0,
+      "p95": 2906.5,
+      "min": 1397,
+      "max": 2911
+    },
+    "model_calls_per_question_mean": 1,
+    "citation_validation_refusals": 2
+  },
+  "methodology": {
+    "recall_at_3": "Macro-average page recall over answerable questions: unique annotated (document_name, physical 1-based page) pairs found in raw top-3 chunks / all annotated page pairs. It does not verify exact supporting passage. Search failures score zero; generation failures retain measured retrieval.",
+    "automatic_answer_accuracy": "Preliminary regex check of final answer only, or explicit abstention for unanswerable questions. It does not establish semantic correctness.",
+    "reviewed_accuracy": "Correct agent-adjudicated answers / all questions, including errors. Published only when every response has an explicit review note. Reviews are agent-assisted checks against gold answers, not independent human labels, and use no additional judge-model API calls.",
+    "refusals": "Correct refusal rate = unanswerable explicit abstentions / all unanswerable; false refusal rate = answerable explicit abstentions / all answerable; abstention precision = correct explicit refusals / all explicit abstentions. Request errors never count as refusals and remain in rate denominators.",
+    "latency": "Sequential single-run wall-clock seconds, no warmup excluded. Ask includes one query embedding/retrieval, generation when invoked, retries and final validation; excludes PDF indexing, HTTP and UI. Retrieval measures the same search inside ask, not a second search. p50/p95 use linear interpolation. Successful and failed ask latencies are reported separately.",
+    "scope": "Small curated development benchmark, not an independent held-out estimate.",
+    "evidence_recall": "Macro requirement-group recall over verified answerable labels; unknown/unreviewed labels are unavailable, with coverage reported. Bundles may need multiple chunks, including period/unit headers.",
+    "citation_validity": "Conditional returned-citation identity and raw-source substring validity; not semantic entailment or correctness. Empty denominator is N/A. Raw model quote validity is a separate pre-validation metric.",
+    "context": "Filtered retrieved text characters, capped at the configured budget; includes zero-context/error cases. Top-5 can supply more evidence than Top-3.",
+    "repetition": "Repeated trials on the same development set; not additional unique questions, an independent holdout or a significance test."
+  }
+}

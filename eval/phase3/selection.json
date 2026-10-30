@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "state": "candidate_frozen_before_end_to_end_and_holdout",
+  "frozen_at_utc": "2026-10-29T20:43:38.576740+00:00",
+  "retrieval_method": "dense",
+  "top_k": 5,
+  "min_relevance_score": 0.35,
+  "max_context_chars": 16000,
+  "chat_model": "gpt-4o-mini",
+  "embedding_model": "text-embedding-3-small",
+  "citation_retry_limit": 0,
+  "rationale": "Dense5 adds one fully supported question vsDense3; hybrid has no evidence-recall benefit at either k and adds sparse startup/ranking cost. Keep hybrid experimental only; trial generic completeness/table-copy prompt.",
+  "interventions": [
+    "Top3 toTop5 (more available context)",
+    "generic multipart completeness and contiguous table-copy prompt"
+  ],
+  "unchanged": [
+    "corpus/chunkIDs/text/metadata",
+    "models",
+    "gold/rubric",
+    "cosine threshold0.35",
+    "citationvalidator",
+    "maxcontext16000"
+  ],
+  "retrieval_experiment": {
+    "schema_version": 1,
+    "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+    "embedding_fingerprint": "66802fe19d8a715bb1e6e3ef9fb75460ce1186353f6b80c090443d9cd03522df",
+    "corpus_chunks": 467,
+    "candidate_k": 20,
+    "rrf_k": 60,
+    "min_relevance_score": 0.35,
+    "max_context_chars": 16000,
+    "query_embedding_batch_seconds": 3.0795665749974432,
+    "sparse_startup_seconds": 0.8895917129993904,
+    "latency_scope": "Local ranking only with the same cached real query vectors. Batch embedding time reported separately, not divided into query latency.",
+    "top_k_tradeoff": "Top5 may supply up to5000 chunk characters vs3000 forTop3, under the same16000-character cap; not a single-variable context comparison.",
+    "summaries": [
+      {
+        "method": "dense",
+        "top_k": 3,
+        "questions": 24,
+        "verified_answerable_questions": 18,
+        "page_recall": 0.7222222222222222,
+        "evidence_recall": 0.6666666666666666,
+        "filtered_evidence_recall": 0.6666666666666666,
+        "fully_supported_questions": 12,
+        "fully_supported_after_filtering": 12,
+        "mean_ranking_seconds": 0.017824598083583016,
+        "mean_context_chars": 2314.6666666666665,
+        "mean_relevant_chunks_surviving": 1
+      },
+      {
+        "method": "dense",
+        "top_k": 5,
+        "questions": 24,
+        "verified_answerable_questions": 18,
+        "page_recall": 0.7222222222222222,
+        "evidence_recall": 0.7222222222222222,
+        "filtered_evidence_recall": 0.7222222222222222,
+        "fully_supported_questions": 13,
+        "fully_supported_after_filtering": 13,
+        "mean_ranking_seconds": 0.017388155208209355,
+        "mean_context_chars": 3710.875,
+        "mean_relevant_chunks_surviving": 1.1666666666666667
+      },
+      {
+        "method": "hybrid",
+        "top_k": 3,
+        "questions": 24,
+        "verified_answerable_questions": 18,
+        "page_recall": 0.5,
+        "evidence_recall": 0.6666666666666666,
+        "filtered_evidence_recall": 0.6666666666666666,
+        "fully_supported_questions": 12,
+        "fully_supported_after_filtering": 12,
+        "mean_ranking_seconds": 0.021298354291805783,
+        "mean_context_chars": 2306.5833333333335,
+        "mean_relevant_chunks_surviving": 0.9444444444444444
+      },
+      {
+        "method": "hybrid",
+        "top_k": 5,
+        "questions": 24,
+        "verified_answerable_questions": 18,
+        "page_recall": 0.7222222222222222,
+        "evidence_recall": 0.7222222222222222,
+        "filtered_evidence_recall": 0.7222222222222222,
+        "fully_supported_questions": 13,
+        "fully_supported_after_filtering": 13,
+        "mean_ranking_seconds": 0.02465444266696674,
+        "mean_context_chars": 3799.4583333333335,
+        "mean_relevant_chunks_surviving": 1.3888888888888888
+      }
+    ]
+  },
+  "source_hashes": {
+    "src/research_qa/qa.py": "708f982d14c61c5c2bd6aa3960ec909ea220ed5faade9ce8566a121a62d5d015",
+    "src/research_qa/retrieval.py": "9330ae31074b1222acb03d014ffce1da1e5f23728e136e361b8adbe6edb7c3ab",
+    "src/research_qa/index.py": "2819661b163d7255c80b88f022a2515ee6df6122a2223c84d154ce134951e9d3",
+    "src/research_qa/ingestion.py": "3cc15c83c8a227630d0957056d974629041f53f4eb883171ae9333a110319145",
+    "uv.lock": "78f36008acd45c6ef17f6b5160fd767511b55f0e0aae991ed810cd51346d68ac"
+  },
+  "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+  "evidence_labels_sha256": "4b91036878343a5b810b135d6899aadfdca6528bbe7dfc92f3ca172eed8aa9b9",
+  "holdout_dataset_sha256": "95af2280b3b86e8e44032a7f47b0cbd43a578bafe065620f9ced89f444a528ac",
+  "holdout_selection_policy": "No holdout retrieval or chat outputs observed before freeze; no implementation or parameter tuning on holdout results."
+}

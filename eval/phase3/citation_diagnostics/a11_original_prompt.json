@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "kind": "new_live_diagnostic_not_historical_model_output",
+  "recorded_at_utc": "2026-10-29T20:33:04.791561+00:00",
+  "chat_model": "gpt-4o-mini",
+  "question_id": "a11",
+  "question": "What was Apple's Services gross margin percentage in FY2025?",
+  "context_origin": "Exact Phase 2 retrieved trace verified against copied chunk corpus",
+  "prompt_sha256": "b5e440f5c2243ee309ea5a06cc160402c077d00e276613acc54c10d6cd394486",
+  "extra_prompt": "",
+  "context": [
+    {
+      "source_id": "S1",
+      "document_name": "apple_2025_10k.pdf",
+      "page": 27,
+      "text": "Gross Margin\n\nProducts and Services gross margin and gross margin percentage for 2025, 2024 and 2023 were as follows (dollars in millions):\n\n                                                                           2025            2024            2023\n\n Gross margin:\n\n     Products                                                   $     112,887  $     109,633  $     108,803\n\n     Services                                                               82,314         71,050         60,345\n\n          Total gross margin                                        $     195,201  $     180,683  $     169,148\n\n\n Gross margin percentage:\n\n     Products                                                         36.8%         37.2%         36.5%\n\n     Services                                                         75.4%         73.9%         70.8%\n\n          Total gross margin percentage                                    46.9%         46.2%         44.1%\n\n\n\nProducts Gross Margin"
+    },
+    {
+      "source_id": "S2",
+      "document_name": "apple_2025_10k.pdf",
+      "page": 27,
+      "text": "Total gross margin percentage                                    46.9%         46.2%         44.1%\n\n\n\nProducts Gross Margin\n\nProducts gross margin increased during 2025 compared to 2024 primarily due to favorable costs and a different mix of products,\npartially offset by tariff costs.\n\n\nProducts gross margin percentage decreased during 2025 compared to 2024 primarily due to a different mix of products and\ntariff costs, partially offset by other favorable costs.\n\n\nServices Gross Margin\n\nServices gross margin increased during 2025 compared to 2024 primarily due to higher Services net sales and a different mix of\nservices.\n\n\nServices gross margin percentage increased during 2025 compared to 2024 primarily due to a different mix of services, partially\noffset by higher costs."
+    },
+    {
+      "source_id": "S3",
+      "document_name": "apple_2025_10k.pdf",
+      "page": 26,
+      "text": "Total net sales                            $   416,161        6 % $   391,035        2 % $   383,285\n\n\n      (1)  Services net sales include amortization of the deferred value of services bundled in the sales price of certain products.\n\n\niPhone\n\niPhone net sales increased during 2025 compared to 2024 due to higher net sales of Pro models.\n\n\nMac\n\nMac net sales increased during 2025 compared to 2024 primarily due to higher net sales of laptops and desktops.\n\n\niPad\n\niPad net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPad Air, iPad mini and iPad, partially\noffset by lower net sales of iPad Pro.\n\n\nWearables, Home and Accessories\n\nWearables, Home and Accessories net sales decreased during 2025 compared to 2024 primarily due to lower net sales of\nAccessories and Wearables.\n\n\nServices\n\nServices net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store\nand cloud services."
+    }
+  ],
+  "raw_model_content": "{\"abstained\": false, \"claims\": [{\"text\": \"Apple's Services gross margin percentage in FY2025 was 75.4%.\", \"evidence\": [{\"source_id\": \"S1\", \"quote\": \"Services gross margin percentage: 75.4%\"}]}]}",
+  "quote_validation": [
+    {
+      "claim_text": "Apple's Services gross margin percentage in FY2025 was 75.4%.",
+      "source_id": "S1",
+      "generated_quote": "Services gross margin percentage: 75.4%",
+      "exact_substring": false,
+      "whitespace_equivalent_match": false,
+      "matched_original_quote": null
+    }
+  ],
+  "validated_response": {
+    "answer": "Insufficient evidence in the uploaded documents to answer this question.",
+    "abstained": true,
+    "citations": [],
+    "reason": "unverifiable_citation"
+  },
+  "chat_and_validation_seconds": 3.9313270620041294,
+  "historical_response": {
+    "answer": "Insufficient evidence in the uploaded documents to answer this question.",
+    "abstained": true,
+    "citations": [],
+    "reason": "unverifiable_citation"
+  }
+}

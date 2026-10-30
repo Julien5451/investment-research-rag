@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "name": "Apple FY2025 annual-report QA / curated 24-question development benchmark",
+  "description": "18 answerable and 6 deliberately unanswerable questions. Gold source pages are physical 1-based PDF pages. Single-report curated development benchmark, not a held-out production benchmark. Standards authored from source before model run; accuracy later adjudicated by the coding assistant, not an independent human.",
+  "documents": [
+    {
+      "document_name": "apple_2025_10k.pdf",
+      "url": "https://s2.q4cdn.com/470004039/files/doc_financials/2025/ar/_10-K-2025-As-Filed.pdf",
+      "sha256": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de",
+      "company": "Apple Inc.",
+      "fiscal_year": 2025,
+      "pages": 80,
+      "source_page": "https://investor.apple.com/investor-relations/default.aspx"
+    }
+  ],
+  "questions": [
+    {
+      "id": "a01",
+      "question": "What date did Apple's fiscal year 2025 end?",
+      "answerable": true,
+      "reference_answer": "September 27, 2025.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 1,
+          "quote": "For the fiscal year ended September 27, 2025"
+        }
+      ],
+      "required_patterns": [
+        "September\\s+27,?\\s+2025|2025年?9月27日"
+      ],
+      "category": "company_profile"
+    },
+    {
+      "id": "a02",
+      "question": "根据年报，Mac 个人电脑使用什么操作系统？",
+      "answerable": true,
+      "reference_answer": "macOS.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 4,
+          "quote": "Mac® is the Company’s line of personal computers based on its macOS® operating system."
+        }
+      ],
+      "required_patterns": [
+        "macOS"
+      ],
+      "category": "product_description"
+    },
+    {
+      "id": "a03",
+      "question": "List Apple's five reportable geographic segments in the 2025 annual report.",
+      "answerable": true,
+      "reference_answer": "Americas, Europe, Greater China, Japan and Rest of Asia Pacific.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 5,
+          "quote": "The Company’s reportable segments consist of the Americas, Europe, Greater China, Japan and Rest of Asia Pacific."
+        }
+      ],
+      "required_patterns": [
+        "Americas|美洲",
+        "Europe|欧洲",
+        "Greater China|大中华",
+        "Japan|日本",
+        "Rest of Asia Pacific|亚太其他|其他亚太"
+      ],
+      "category": "business_structure"
+    },
+    {
+      "id": "a04",
+      "question": "2025 财年，苹果直接与间接分销渠道分别占总净销售额的百分之多少？",
+      "answerable": true,
+      "reference_answer": "Direct channels 40%; indirect channels 60%.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 5,
+          "quote": "During 2025, the Company’s net sales through its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales."
+        }
+      ],
+      "required_patterns": [
+        "40\\s*[%％]",
+        "60\\s*[%％]"
+      ],
+      "category": "business_structure"
+    },
+    {
+      "id": "a05",
+      "question": "Approximately how many full-time equivalent employees did Apple have as of September 27, 2025?",
+      "answerable": true,
+      "reference_answer": "Approximately 166,000 full-time equivalent employees.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 7,
+          "quote": "As of September 27, 2025, the Company had approximately 166,000 full-time equivalent employees."
+        }
+      ],
+      "required_patterns": [
+        "166,?000|16\\.6\\s*万"
+      ],
+      "category": "human_capital"
+    },
+    {
+      "id": "a06",
+      "question": "Which fiscal quarter historically has higher net sales, and what seasonal reason does Apple give?",
+      "answerable": true,
+      "reference_answer": "The first fiscal quarter, partly because of seasonal holiday demand.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 7,
+          "quote": "The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand."
+        }
+      ],
+      "required_patterns": [
+        "first\\s+(?:fiscal\\s+)?quarter|Q1|第一季度",
+        "holiday|假日|节日"
+      ],
+      "category": "seasonality"
+    },
+    {
+      "id": "a07",
+      "question": "Why did Greater China net sales decrease in 2025 compared with 2024, and what partly offset that decline?",
+      "answerable": true,
+      "reference_answer": "Lower iPhone net sales, partially offset by higher Mac net sales.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 25,
+          "quote": "Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone, partially offset by higher net sales of Mac."
+        }
+      ],
+      "required_patterns": [
+        "iPhone",
+        "Mac",
+        "lower|decreas|declin|下降|减少",
+        "higher|increas|增长|增加"
+      ],
+      "category": "management_discussion"
+    },
+    {
+      "id": "a08",
+      "question": "According to the 2025 report, which three areas primarily drove higher Services net sales?",
+      "answerable": true,
+      "reference_answer": "Advertising, the App Store and cloud services.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 26,
+          "quote": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store and cloud services."
+        }
+      ],
+      "required_patterns": [
+        "advertis|广告",
+        "App Store|应用商店",
+        "cloud|云"
+      ],
+      "category": "management_discussion"
+    },
+    {
+      "id": "a09",
+      "question": "What were Apple's iPhone net sales in FY2025, in USD millions?",
+      "answerable": true,
+      "reference_answer": "USD 209,586 million.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 26,
+          "quote": "iPhone $ 209,586 4 % $ 201,183"
+        }
+      ],
+      "required_patterns": [
+        "209,?586|209\\.586"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a10",
+      "question": "2025 财年 Mac 净销售额是多少（以百万美元计）？",
+      "answerable": true,
+      "reference_answer": "33,708 million US dollars.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 26,
+          "quote": "Mac 33,708 12 % 29,984 2 % 29,357"
+        }
+      ],
+      "required_patterns": [
+        "33,?708|33\\.708"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a11",
+      "question": "What was Apple's Services gross margin percentage in FY2025?",
+      "answerable": true,
+      "reference_answer": "75.4%.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 27,
+          "quote": "Services 75.4% 73.9% 70.8%"
+        }
+      ],
+      "required_patterns": [
+        "75\\.4\\s*[%％]"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a12",
+      "question": "2025 财年苹果的总毛利率是多少？",
+      "answerable": true,
+      "reference_answer": "46.9%.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 27,
+          "quote": "Total gross margin percentage 46.9% 46.2% 44.1%"
+        }
+      ],
+      "required_patterns": [
+        "46\\.9\\s*[%％]"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a13",
+      "question": "What was Apple's research and development expense in FY2025, in USD millions?",
+      "answerable": true,
+      "reference_answer": "USD 34,550 million.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 27,
+          "quote": "Research and development $ 34,550 10 % $ 31,370 5 % $ 29,915"
+        }
+      ],
+      "required_patterns": [
+        "34,?550|34\\.55"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a14",
+      "question": "What two cost categories primarily drove the increase in Apple's R&D expense in 2025?",
+      "answerable": true,
+      "reference_answer": "Headcount-related expenses and infrastructure-related costs.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 27,
+          "quote": "The growth in R&D expense during 2025 compared to 2024 was primarily driven by increases in headcount-related expenses and infrastructure-related costs."
+        }
+      ],
+      "required_patterns": [
+        "headcount|personnel|员工|人员|人力",
+        "infrastructure|基础设施"
+      ],
+      "category": "management_discussion"
+    },
+    {
+      "id": "a15",
+      "question": "What was Apple's effective tax rate in FY2025?",
+      "answerable": true,
+      "reference_answer": "15.6%.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 28,
+          "quote": "Effective tax rate 15.6% 24.1% 14.7%"
+        }
+      ],
+      "required_patterns": [
+        "15\\.6\\s*[%％]"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a16",
+      "question": "As of September 27, 2025, what was the combined balance of cash, cash equivalents and marketable securities, in USD billions?",
+      "answerable": true,
+      "reference_answer": "USD 132.4 billion.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 28,
+          "quote": "The Company believes its balances of cash, cash equivalents and marketable securities, which totaled $132.4 billion as of September 27, 2025"
+        }
+      ],
+      "required_patterns": [
+        "132\\.4|1,?324"
+      ],
+      "category": "liquidity"
+    },
+    {
+      "id": "a17",
+      "question": "What was Apple's net income in FY2025, in USD millions?",
+      "answerable": true,
+      "reference_answer": "USD 112,010 million.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 32,
+          "quote": "Net income $ 112,010 $ 93,736 $ 96,995"
+        }
+      ],
+      "required_patterns": [
+        "112,?010|112\\.01"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "a18",
+      "question": "2025 财年苹果的稀释每股收益是多少美元？",
+      "answerable": true,
+      "reference_answer": "USD 7.46 per diluted share.",
+      "evidence": [
+        {
+          "document_name": "apple_2025_10k.pdf",
+          "page": 32,
+          "quote": "Diluted $ 7.46 $ 6.08 $ 6.13"
+        }
+      ],
+      "required_patterns": [
+        "7\\.46"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "u01",
+      "question": "What will Apple's exact total net sales be in fiscal 2026?",
+      "answerable": false,
+      "reference_answer": "The uploaded 2025 annual report does not establish exact future FY2026 sales.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "future_information"
+    },
+    {
+      "id": "u02",
+      "question": "What was Apple Vision Pro's standalone net sales in FY2025, excluding all other products?",
+      "answerable": false,
+      "reference_answer": "The uploaded report does not separately disclose Vision Pro net sales.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "undisclosed_metric"
+    },
+    {
+      "id": "u03",
+      "question": "苹果 2025 财年一共卖出了多少台 iPhone？请给出准确出货量。",
+      "answerable": false,
+      "reference_answer": "The uploaded report does not disclose an exact FY2025 iPhone unit shipment count.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "undisclosed_metric"
+    },
+    {
+      "id": "u04",
+      "question": "What was Microsoft Azure's FY2025 revenue in USD millions?",
+      "answerable": false,
+      "reference_answer": "The uploaded Apple annual report does not report Microsoft Azure's FY2025 revenue.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "out_of_corpus"
+    },
+    {
+      "id": "u05",
+      "question": "What was Apple's closing stock price on December 31, 2025?",
+      "answerable": false,
+      "reference_answer": "The uploaded annual report does not provide that later daily closing stock price.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "out_of_corpus"
+    },
+    {
+      "id": "u06",
+      "question": "苹果 2025 财年用于训练生成式 AI 模型的总成本是多少美元？",
+      "answerable": false,
+      "reference_answer": "The uploaded annual report does not separately disclose total generative-AI model training costs.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "undisclosed_metric"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "dataset_name": "Apple FY2025 annual-report QA / curated 24-question development benchmark",
+  "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+  "mode": "live",
+  "status": "complete",
+  "started_at_utc": "2026-10-29T19:36:38.923302+00:00",
+  "started_at_shanghai": "2026-10-30T03:36:38.923432+08:00",
+  "chat_provider": "openai",
+  "chat_model": "gpt-4o-mini",
+  "chat_host": "api.openai.com",
+  "embedding_provider": "openai",
+  "embedding_model": "text-embedding-3-small",
+  "embedding_host": "api.openai.com",
+  "embedding_fingerprint": "66802fe19d8a715bb1e6e3ef9fb75460ce1186353f6b80c090443d9cd03522df",
+  "prompt_sha256": "b5e440f5c2243ee309ea5a06cc160402c077d00e276613acc54c10d6cd394486",
+  "top_k": 3,
+  "chunk_size": 1000,
+  "chunk_overlap": 150,
+  "min_relevance_score": 0.35,
+  "max_context_chars": 16000,
+  "request_timeout_seconds": 60.0,
+  "question_limit": null,
+  "dataset_question_count": 24,
+  "python_version": "3.11.16",
+  "platform": "Linux",
+  "versions": {
+    "langchain-core": "1.7.1",
+    "langchain-openai": "1.7.3",
+    "langchain-chroma": "1.1.0",
+    "chromadb": "1.5.9",
+    "pymupdf": "1.28.2"
+  },
+  "documents": [
+    {
+      "document_name": "apple_2025_10k.pdf",
+      "url": "https://s2.q4cdn.com/470004039/files/doc_financials/2025/ar/_10-K-2025-As-Filed.pdf",
+      "sha256": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de",
+      "company": "Apple Inc.",
+      "fiscal_year": 2025,
+      "pages": 80,
+      "source_page": "https://investor.apple.com/investor-relations/default.aspx",
+      "document_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de",
+      "chunks": 467
+    }
+  ],
+  "ingestion_seconds": 15.424591588001931,
+  "finished_at_utc": "2026-10-29T19:37:45.205846+00:00"
+}

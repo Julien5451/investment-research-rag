@@ -1,0 +1,36 @@
+{
+  "implementation_unchanged": true,
+  "checked_at_utc": "2026-10-29T20:52:48.836544+00:00",
+  "selection_decision": {
+    "schema_version": 1,
+    "selected": "optimized",
+    "development_runs_completed": 3,
+    "paired_question_executions": 144,
+    "decision_basis": "All 144 final answers inspected against the unchanged gold rubric. Each baseline run answers 17/24 correctly; each candidate run answers 20/24 correctly. a06, a11 and a16 improve in all three repeats, with no correctness regression among the other 21 questions. Retrieval-only comparison gives no evidence-recall benefit for hybrid over dense at the same k.",
+    "selected_configuration": "Dense Top5; unchanged cosine threshold0.35 and16000-character ceiling; generic completeness/table-copy prompt; unchanged citation validator; zero repair retries.",
+    "limitations": "Same small development set, agent-assisted non-blind adjudication; Top5 supplies more context, and prompt changes are a bundled intervention. No statistical-significance or generalizability claim. a18 still lacks a verified table-year-header bundle despite a numerically correct answer.",
+    "holdout_policy": "Selection made before any holdout query embedding, retrieval evaluation or chat generation. Preserve the selected implementation hashes and do not tune after observing holdout outputs."
+  },
+  "source_hashes": {
+    "src/research_qa/qa.py": "708f982d14c61c5c2bd6aa3960ec909ea220ed5faade9ce8566a121a62d5d015",
+    "src/research_qa/retrieval.py": "9330ae31074b1222acb03d014ffce1da1e5f23728e136e361b8adbe6edb7c3ab",
+    "src/research_qa/index.py": "2819661b163d7255c80b88f022a2515ee6df6122a2223c84d154ce134951e9d3",
+    "src/research_qa/ingestion.py": "3cc15c83c8a227630d0957056d974629041f53f4eb883171ae9333a110319145",
+    "uv.lock": "78f36008acd45c6ef17f6b5160fd767511b55f0e0aae991ed810cd51346d68ac"
+  },
+  "dataset_sha256": "95af2280b3b86e8e44032a7f47b0cbd43a578bafe065620f9ced89f444a528ac",
+  "documents": [
+    {
+      "document_name": "costco_2025.pdf",
+      "url": "https://s201.q4cdn.com/287523651/files/doc_financials/2025/ar/COST-Annual-Report-2025.pdf",
+      "sha256": "25449d39bb369341789c0060e408805eac93c63e2a3a345dd3fae9b8307e72bc",
+      "company": "Costco Wholesale Corporation",
+      "fiscal_year": 2025,
+      "pages": 76,
+      "source_page": "https://investor.costco.com/overview/",
+      "chunks": 430
+    }
+  ],
+  "indexing_seconds": 14.40441736500361,
+  "scope": "One holdout pass per frozen variant; no tuning on these outputs. Holdout evidence-level labels are unavailable; do not substitute page labels."
+}

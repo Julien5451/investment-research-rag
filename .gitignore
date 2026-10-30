@@ -1,0 +1,51 @@
+# Credentials and local configuration (only the blank template is public).
+.env
+.env.*
+!.env.example
+.envrc
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local documents, databases and reconstructible evaluation resources.
+data/
+eval/pdfs/
+eval/phase3/workspace/
+eval/results/*/index/
+eval/**/index/
+**/chroma/
+*.pdf
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Environments, build outputs and caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+*.egg-info/
+build/
+dist/
+.coverage
+.coverage.*
+htmlcov/
+
+# Scratch work and local release verification (never historical results).
+tmp/
+.release/
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

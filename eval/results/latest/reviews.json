@@ -1,0 +1,98 @@
+{
+  "a01": {
+    "correct": true,
+    "note": "Correct complete date answer. Citation on page80 repeats the fact on annotated page1; this illustrates an alternative-valid-page limitation of the recall label."
+  },
+  "a02": {
+    "correct": true,
+    "note": "Correct macOS answer and page4 source."
+  },
+  "a03": {
+    "correct": true,
+    "note": "Correct complete list of all five geographic segments; citation page50 repeats the annotated page5 statement."
+  },
+  "a04": {
+    "correct": false,
+    "note": "Incorrect refusal: answerable direct/indirect channel split is40%/60% on page5; retrieval missed that page."
+  },
+  "a05": {
+    "correct": false,
+    "note": "Incorrect refusal:166,000FTE employees is stated on page7; raw top3 missed that page."
+  },
+  "a06": {
+    "correct": false,
+    "note": "Incomplete answer, graded incorrect: first quarter is correct but the final answer omits the explicitly requested seasonal-holiday-demand reason. The reason appears only inside the citation quote, which does not satisfy the answer-text completeness rubric."
+  },
+  "a07": {
+    "correct": true,
+    "note": "Correct complete explanation: lower iPhone sales partially offset by higher Mac sales; original newline-containing page25 quote is preserved."
+  },
+  "a08": {
+    "correct": true,
+    "note": "Correct all three drivers: advertising, AppStore, cloud services; quote maps to the original page26 text across its linebreak."
+  },
+  "a09": {
+    "correct": true,
+    "note": "Correct amount and units:USD209,586million; alternative supporting disaggregated-sales table on page39."
+  },
+  "a10": {
+    "correct": true,
+    "note": "Correct amount and units:33,708millionUSdollars; page39 source preserves table spaces."
+  },
+  "a11": {
+    "correct": false,
+    "note": "Incorrect refusal despite answerable75.4% Services gross margin on page27; remaining unverifiable citation failure."
+  },
+  "a12": {
+    "correct": false,
+    "note": "Incorrect refusal:46.9% total gross margin on page27; retrieval missed this page."
+  },
+  "a13": {
+    "correct": false,
+    "note": "Incorrect refusal:USD34,550million R&Dexpense is in corpus. Retrieval of another chunk on page27 does not ensure the expense row reached model context."
+  },
+  "a14": {
+    "correct": true,
+    "note": "Correct complete two drivers:headcount-related expenses and infrastructure-related costs; original page27 quote preserved."
+  },
+  "a15": {
+    "correct": true,
+    "note": "Correct FY2025 effective tax rate15.6% and page28 source."
+  },
+  "a16": {
+    "correct": false,
+    "note": "Incorrect refusal: combined balanceUSD132.4billion is provided on page28; remaining unverifiable citation failure with alternative table retrieval."
+  },
+  "a17": {
+    "correct": true,
+    "note": "Correct net income and units:USD112,010million; page33 alternative source matches gold page32."
+  },
+  "a18": {
+    "correct": true,
+    "note": "Correct diluted EPS:USD7.46; alternative per-share disclosure on page39."
+  },
+  "u01": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded 2025 annual report does not establish exact future FY2026 sales."
+  },
+  "u02": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded report does not separately disclose Vision Pro net sales."
+  },
+  "u03": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded report does not disclose an exact FY2025 iPhone unit shipment count."
+  },
+  "u04": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded Apple annual report does not report Microsoft Azure's FY2025 revenue."
+  },
+  "u05": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded annual report does not provide that later daily closing stock price."
+  },
+  "u06": {
+    "correct": true,
+    "note": "Correct explicit abstention: The uploaded annual report does not separately disclose total generative-AI model training costs."
+  }
+}

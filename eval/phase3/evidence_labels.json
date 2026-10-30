@@ -1,0 +1,3250 @@
+{
+  "schema_version": 1,
+  "name": "Apple FY2025 reviewed evidence bundles, Phase3 v1",
+  "dataset_sha256": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+  "source_pdf_sha256": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de",
+  "label_provenance": "Codex agent source audit; not independent human labels. Full copied467-chunk corpus literal-search audit plus originalPDF page/unit/header inspection. No judge model or answer-page-only inference.",
+  "metric_definition": "Per-question fraction of required evidencegroups fully supported by at leastone verified sourcebundle among selectedchunks; macro-average over verified answerable questions. All pieces in a bundle required; alternatives are OR. Fullsupport is separate. Whitespace equivalence only; period/currency/units required for financialfacts.",
+  "limitations": [
+    "Reviewed bundles are conservative source support labels, not an exhaustive semantic annotation of everypossible paraphrase or arithmetic path.",
+    "Some table alternatives require a header chunk and row chunk; a matchingpage or numeric token alone never suffices.",
+    "Unknown question/corpusidentity or changedtext requires review; no positive relevance is inferred from pageidentity.",
+    "Phase2 rawgenerated quotes forfailedvalidation were notsaved; exact historicalfailurecause cannot be reconstructed from finalabstention alone."
+  ],
+  "corpus": {
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:1:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 1,
+      "text_sha256": "e696111b685accce4ff84e6f173a1395c2dc72a1f4b2937fa928800ebfb511bd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:1:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 1,
+      "text_sha256": "dfc9bd2e8927d4d27709b6e5465f5704e915c203c71b726a791bcaa3f8ae9738"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:1:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 1,
+      "text_sha256": "e52152acaf1fe374cfd5056534a670b30d9c4647fa373c98f75c56a3fcbdd61f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:1:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 1,
+      "text_sha256": "60f5d4f8bc5d9cf2ffefc016640a9f10bd5c3d621cee4b5fc7ae012a20384d9a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:2:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 2,
+      "text_sha256": "157287614f816a317f54cfa4f6e6ca0b5a61cd2f6174ad679a3695b622d6440b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:2:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 2,
+      "text_sha256": "d04160e6709afa1281660aef64fa65146f72127b22e43b68cc06f1bf01802e87"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:2:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 2,
+      "text_sha256": "2aadff3c80806b70634e07598b7137887ae1147d54a95f3eeba5b2a87ddbfb61"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:2:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 2,
+      "text_sha256": "97597b24c0fee53b23f2fa736c6054b6e089942128bffe7245265c125fa730c7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:2:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 2,
+      "text_sha256": "b6e1a09b90cdcaddd641a7d987848c3e47d357454c0bcfc8a33cecdc5c69c2c3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:3:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 3,
+      "text_sha256": "2153205ae7cc8b9cdff6409c46a4d3b2b4613bdbfb3a33285505a5733c68d195"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:3:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 3,
+      "text_sha256": "9fc88bcc5014db99a2af8ded639039c0b72d79e9e9c410c29784b45b40172f40"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:3:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 3,
+      "text_sha256": "be59ada3b1543afd9e291bbc2ab2c4e3fe5b0d4ab92c60184abca908275e05d9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:3:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 3,
+      "text_sha256": "e1d3e7a5f3a4660505209c22109a6dd9720a8425ab326448c7ae43db1eb67ee1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:4:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 4,
+      "text_sha256": "4dde05bf308d4bbbff0686795260f713c76b62a514ccbf45c7cf71638593ad39"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:4:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 4,
+      "text_sha256": "dda3f2cd3ec707608a1a3ab61747d8841aa995f4f00532b8e53a3bbcce8e3a21"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:4:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 4,
+      "text_sha256": "2a888fbec26743381992c46fcb64271a273abdbfe7eefe7be1cf1d25413e19bc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:4:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 4,
+      "text_sha256": "967dedc5e292aa599e894d97bf2a8f59159fa0cfb71a6814281f83817acfc8c0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:4:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 4,
+      "text_sha256": "d046abf47a009f947a74caba6bf5d503f0ed19a4dfc930404e6dd15a7bd9bf09"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 5,
+      "text_sha256": "a92cfa4824f90e985734498eb431981f23b10e0dca00b0a36bd3bda5332c0dcc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 5,
+      "text_sha256": "b89cbd450e08746b4bb6e5f685888cfaac1f910a2b581b7b614bbdc3e2a4d981"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 5,
+      "text_sha256": "5f2a96072a03149d513b01f98862297405979d03a310b53d8c6a11c8efe59b2f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 5,
+      "text_sha256": "eff310a89df6d7836592b877e146423cc98c45b3118439ea9b486164a6ca56ce"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 5,
+      "text_sha256": "d6c864260b8c73cbd7371f08f9d3b2786e0a3ba8a098e75961097d12ff455f49"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "f6dabef079c5404e9d6eb7346a4de75ea6ddfaaec6a59daccc01704a62f109c2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "94094b31a31ffe42fb8d14bce60451af0822f3b063d6134bc67370fb7d3da22c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "1a56ff09ec561d7b26ade48a02c5c3b8b78ad67bdb62760b59c3272e147fc5c6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "771fc407943932bcc9ea6b0bc50cfce405185a2758dacdfbddc5e7f46e255de7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "0ce3efbfa2d6969a86d6b44861277d859e55f3569feeeb1c988c79cdc9edb601"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "f5e98fd4240e549fcac8e7fb248b7eede6731926e9288d552298b5b0057b0b0a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "a56715b8ab3cff2d869f9d74b24d8616da91c05a5953f489b5b7a5f8a0165910"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "79ac793d7b9a35a07ddd3223062460525d2eab6c6dc51d2ccf1bf03556e145e9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:6:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 6,
+      "text_sha256": "b86f608e1fd93063a685c879de8326efffafa73b86ed783e52b0302961ae5db3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "ee794da8e6016e9f2ec6bd9d3e4c1240867fe5a445669576435d378f30dfb09a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "ba2bbf3fac3cab3ceaf92b0bc9e3fe56cceae089afd43654a80b4b93890f62d2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "358457d46478f7e4c703c2d4e5d442ab4640484674d36a5f58154c77145f880d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "c64f8d576de5a8957b7a65fedcc377366c13fa5ff4a7be003c89e99bd2198342"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "252b7bcc75e1a390fa78e39f702e90a8fb89ab4a047cda87886cb31a531c7886"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "74a69942b30a98e73cb2f2f0396c755008c8d830bacfce24f753469aec81425c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "be49949dcfe104a247285f153547ab1d41b74524aa30bd11b3b942f42f3781d2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 7,
+      "text_sha256": "3654845fe7da980cf6a6f87780744bb1053d1c5008ebd38c6e73a38e646af320"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:8:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 8,
+      "text_sha256": "3fdb92f1c662881e689dd6d02daf5a26fc242ef2baf4d46c7ef60867114b79b8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:8:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 8,
+      "text_sha256": "ef3480af983a0eb623f22b2f6f196f1a5737a4a06a6e8735119a9a2f814a501c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:8:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 8,
+      "text_sha256": "8ad7a254174de820587078aca8af20995bd125432cbdb25a815688e427f088c4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:8:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 8,
+      "text_sha256": "de6041936323192a52578d76d7cd90b815752ddbce57fb939d03514cd75f6fe1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "e845ecf96a6cdb5211de20a093d738d60482fba958177d9d4e6cc2b8728f1937"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "b4e537b4f3d6559cde00d4ae0b92809cfc262e0238522f247121595b725be7c0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "7b86871df0df148fdb199cd9c9c29b15e01255f31f1d3815e4ec9a680c0d7925"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "6474137cd362a2d81dd3858ebb8310aedb34b7247fb7e1c2946e90cb67d918b8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "240053088a4a371e5b20eb2aabb60df249679c07d41debad7da6e727057d839a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "11948d3c2cd7ad1cc7c00456cb637f8b592feaa13c2cad3b2407d538180a13b0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "855ac6cc298686e85e7b9b5f8e93cfebdebac8fac935667d1f786fa0b3398c21"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "d8f13ec9b3d4e16630b6ac109e376359337004fd651c8b6e8b25ca98347c3ef1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "7c00a83eb3e11c0adc0ddbb6363a8480b75c0dbd18c8755c19c2e0016ee5ccab"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:9": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "d9381da776e0a4040be99493ab623080aa2dca44123dea6d2db539d969b72c9d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:9:10": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 9,
+      "text_sha256": "e4267f59843239e466a4daad4f9803eab622bea44cbc5f9774e05a1d327b098d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "2fadd0d09ab2bc064e92e63a061fd5907a8d9fc0ecdda9afde4fda1ef58ea977"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "71f03471621839492c57eb85e1215685509109ca375c01721eb69a14e4313ff3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "833fbb96cce99eb3c1cae4b8f82ae2ce1fe9613ce81f240036849b14f4b88266"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "f306c8352de372d41422e78a2aa0925f7fbb2b27c327c24b5c0f9e4699e0ba3f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "de4c5b11471959b3b2d308a2f6d3d15cdc38c9f48aad21ce3dd5c18fea7c55b4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "a7cb1db1199cbb0210a506a1664074f46723c12afa799fc92903eb71df2df6b3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "b5cfad76438d86968511227cb5bb88d52da68e52aa1e377cc0bb5053ee3814de"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:10:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 10,
+      "text_sha256": "d87c91b151517dc413b8b662c75c97351124a09467976552be6c04d7b8c98a6c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "27ed13a276d80238ea81c8d7a61dd36046e11b7bd6c1358d6182b866f7875b0c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "14f94de4879a3e78c36a5b15eb62263674924ead5e78c19e50f7cc04b7e9fcf0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "bc00e5daaaa82046349235a0454d50f7499d6760cbb2b44dd968a69cdadbcb8e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "c3a0969d832b3a3945a7e7b50f71ca6f445582338999df8f0f86cdc0ca20909b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "2147fb72249a836fbb0f573eaeddc8429851c6847ea58a7810aa0525bdef6f2c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "b9ec788e272c91824c940dc18ddddb9c2eacb5d0b485340b5ed4f9b371d993a3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "e0f5381f819af13987e0580ac7944ab19d9691ff86831a2da9c1520a82383bbd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "1d15643e8777320c01be603c5c403a3bd96dd178fd3a03b569a0b94ad06cb8f9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "06052494329825c060cc8c3f52b45c3ef02f47375c0f8010c20e82ffade33f93"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:9": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "4753618db0c7329ddcd5348ea21d5cfd8e542b6a36fbbd36cefd4b69fa63ddeb"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:10": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "ff8c4ed1df211d97c65c8c354c204fd00b8dfe505915349d348287e64a3cdbbd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:11:11": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 11,
+      "text_sha256": "1d003898b2eb6b8b1068146e010e7eed06294a0c9d30646f3f7be6b1b132a1d9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "f31ae16d49a6a90d4c1388f4a90afa4e55d6bc2b9efe0d853fb911079d7a8864"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "caf2498fa644fdb99e942e7052c08b8a3e4d39f6d82fded8fc76f2b3f12d4db0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "7f353ba3df96c706b76f573a79624f131c3f3812bbc3316be62a95a29d0ddbe0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "aba06ba1fd3678601875673c51075f0f63b649f53359424a7bcff37588a17e48"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "aae99abf080140732754d8b23dfdef6b6b51ae8df4c579a5087953f05278fb83"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "94cbafda4c6a97688828ea8a590a8003b5c694feaa6da01d2b39d8556b6eaa4c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "7b81cf04614c0d9ac992135bfc1f1375fe48eceb2c3640f278d1b19b03ea125e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "efb2d851dd0f32789d8ee253bcded9d40ae815458347ce8805b9b27bfc06d274"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:12:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 12,
+      "text_sha256": "da4d964e054bc2eb6982571520492f1cc401cdaf295d4fa4707a2e97b89071f1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "41ca9ee202c45fe6bc38e017b75295682770be822707da5c92995146c7ac39ae"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "1aa0119d00c8b44308ec8c95bd4f736c1f154506a25ce5989f1dca37bfce6c90"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "6ed92b43a80106ae3cef86c841953d195df23a16cf7831fcb4f007c5235f03bc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "2f8a1a4e28470343dd225ddc98b4618d28632b4dfbbee109005489385686d74a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "38a17c0ee137b5e020b2a19e513e81dc280fa6b07f5257a73e74a54af2d6c39f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "f2985e9a3ba388142c9db93be6df1a72fd899b5204fdf8ba772ff07396ec3b7e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "020db7ccc8cacbddf40f482b00864f80af35c0027a191b7b6b3c2dea47d6a8af"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "bf155fca1c0a6b396fe62c4182828e900a48f70d88aa4478235a57524dd19fb3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:13:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 13,
+      "text_sha256": "36e556d396beca785c5b18a8abbd0dc41397ca72bf990ec7d5a0423cd93396e9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "43618de489dafc527487d7b4bf8f1bf991894774199ea56c9a8920a86fe7e4cb"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "a9328bc9f6cdb593fe29c36e0737711edd19b406ce0979ab1727723f523493fa"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "af5b702dc9ca035f1f0bf85451ce74b180a63706a4ff48a4a80e4ea27e51d42a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "a55e22967d9306fe3dc27ad65dfd1fac899f2cb8719c50fac93ee25159aa1f5e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "f85ae742b702620240593aa40b8665c2cc002a47e70a95d20bdabcf27a22dc5e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "429d0246137b9e4db5f3985ac1dc02d949fdb1d8dbba63cbefa889408a88db34"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "a8ec7ed769cdedf7715eec30677397c91c44a717ecb4bb6b572e23affadc1450"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "af431cad3d6255832a0798caec2ce19840c456418b728540345b2aab94476d31"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:14:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 14,
+      "text_sha256": "5539cdc76b4587e2920c69f10e7ccbf95f176f3afe223ee687ca68f969714bd2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "0fa65470d4926bdd59a504ebcca4585497675e705bc7f43bd9a96bca16c1fbb7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "ff9ae5386a8f623940ff9d96d48a67e49725d765641b83926a4c5b8f1507048a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "d9024c3e3bc7ed3559f5942a4046e7026abe962205591d9c1c6808972b79b362"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "8dc6d36ddff179d6da75f577f0027bcc8830f67967c1a2997d2963a7e1759110"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "f008d2e71878faeb4fbc0303c5bd5b5bb215fe963f51a347e8df05c29f2cb2ce"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "42765835109f160c3a3c60b0d18c2296ce786c65951e763d19c113dfd96775f4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:15:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 15,
+      "text_sha256": "eedba2eb22af95ba2277722c0e9ab992b9197fea6e9364198b81a68bf15f2d8f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "78774b717e95030f33aa29b3cd4bb21493faca22fcc2ec28176e45b3d7e8a9c8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "eb7890dfaa8e995764e6e024b3d6bf7371a66e9efcd913e1aeb36dae2defd261"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "15abce4d8f2078b97c0a354504e2c5ae16062455684e2d9cdeabbc48b2a51413"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "a6150b27989f2f6da0c38ed33b2966211e7ac47c8dda7824c53a759dc5e6f5f7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "46654405e333ad7f17518995c34ffd09ee362de79eba2c32e21c84e8723a5167"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "b292a111257becae5f4167837552c6d2a77a846d7b6ec4b1b3f5f6e4b28a390a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "89928575028b7e572dcf3d44e0fc3961867e7bee0ff06ce280cd4984de66a369"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "23b4d36bc098c676897a371dc86a10fb3f46b08d950db617a7a4c5326035f305"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "fe1dd5f61421efe324347eb03568714c4618c8d0da9d8c238d2f2fe670f7a76c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:16:9": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 16,
+      "text_sha256": "2e68c39d5f263418d6fe8aed960e3799536808b55b166b04cf2b552396d9793e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "c334be7f27ffd757654a21f7bb6ca90f847d627ae11c2acdaaed45eef8a07e9b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "8d9c61c4292d571b92ba47cb7585d499a3119cbaeff3e3e6b818a7b810ac56b4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "a853f74f41276652b7b8e0b002f4c77469ae7d9a05d26d983e5348771e24c2c3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "330b15133e758d367d3f1db4e8e824b84a030dffe84cef352af368f52c5a29f4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "e8e644899bf298e700648afd9097f991b09dfe7697ccbf8af9906d9cb75982d5"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "c5a9ebc39e7e5bbe7b6a2bfb29baf6e5c9af74d2e9c2a0d731f6a4b119536593"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "7be078da3cabb40193f1eb046601638c03095041c2603723480cece477d7a496"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:17:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 17,
+      "text_sha256": "7f0fdf464e763157057e7ee933ac0649a4cce5eae393bcbb16a2f02c97b4d6d9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "bc368015beb2b94aa32193083c80883013e95a6bbe82a8c148e0aa87c89838b8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "826fae4efbe523cd41463cfd2c7c069c8afc55c3c5b94ce3e8b36f14840c8734"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "4f89dbc904cd09e79344e04512f18e208ad9ad87f675c0e0dc693028341be2a9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "c13fc958f8e4421375276ebd9c98cccf16a3b70cf794dde00c13053e1aeb4e84"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "496df0d59ef845d75693882ab9704ca6295371e36a38089f931030591a8fdec4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "23c9a37bf6f446cff527b558a275222a71be3bfd9e3d93b8d61cefc863fa5c63"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "782f60cdcef845dfe0ce05463b9491c0882d03f95b8f3a8fe79c43f14bbadd46"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "3d18267afa15cc06b459d08b6e4a67f908a5f27345b171274908b2b36cff11ed"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:18:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 18,
+      "text_sha256": "81c51cf4c7ea044228f692917a21453c1a410e957914524d706bf6a45e7f94e6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "f798aa4ca9363459263564a6b237b623997027f1f17792801e186e878ada2d2c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "94e1052cd284991670f796b6959e6a4660f5533ff46a7a28a0b8cac736b39812"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "f3794b2e60533320f377d843f2d9e4ebf37eb72798685967cf9a0d437358127e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "34f84b436a2acdae2e760bcf889435500e51e9b9ac5d0d6553dd48c14ad3f683"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "77270b82e5bb37ec5c5f35c701211cd7375043473cf20b21d2e329424c3a4a81"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "9062d5d9caf7b47b51659e4c8b44a71ffb0a77ddd9c5154055a8b15abed7959b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:19:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 19,
+      "text_sha256": "839a4b1d4af0f6a771a106ec8366702daafc9b0c803cdf69278655c6a7a2a7ed"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "d904673c660f305e48ae182db933295374b185b49710380285cc9ab6970dfb31"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "4de50c8ac0d94672519fc9c1550371d8a02992f7c4e312f22d9ea839d6da9d82"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "d2a7ddae69184bacc5f57500469e8dde6ebd80a8ccc45a695629e8469774eff3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "2599acebb6191594be654db7953bac689c9fd61b8614a49f37675b7e78bd1777"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "79ab58bc7ddb32d7e03115832b921a98c4832b51a9233b253f66b99cec5c53fe"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "c018bde748676a263549860767b9235102e782b31bcd947c5a43b99fc86080fe"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "cae9d927dcaa46522d58cf3c6192b24c113e213d3520d16f2252cff552e12549"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:20:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 20,
+      "text_sha256": "1bc70f763197cf9397f6e5e3a12ec6f9e02f6c91823f4888bac6d21c8ab6ce92"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "3e41e3c41fa4a904acbb04e245d5264a845bfd50ddc2286b7038869c050aa83d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "009b83e853bf4d74654384c93250190a0305e04e60e7c469750253e818cbd398"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "3002947a898ca0713791f84dceedda423b6e9c3a9cd11335528f463aca39469f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "ac6f624777935b11ffbc8c098d7e293b82a4f54bd3383c373558cbf8d017a398"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "cec3cffd02ca8ba38da7ca7f11be07856c76f786cc30688fe3c63d2cc85fa52d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "c6bb6bd4848f01141d47ba881987867ab620780b609b381f4d2c865b16ffab7a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "a34f66278fabb18912d73f84091c7cf8fdef16f8ca596ca703d3ab1d9b0dc152"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:21:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 21,
+      "text_sha256": "f21f451a9b47413e31b4f34460814e0967a51f0e692df302ea65ee4f8a05684c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:22:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 22,
+      "text_sha256": "69b1b290d16c21247d9926fe4e9415c3ec8993d40a4acd5c1ea833867b498675"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:22:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 22,
+      "text_sha256": "a9b5cc3450d0179f45df7a56cf2dcafe9713e4917dd6b30fba2f088dd312a5bf"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:22:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 22,
+      "text_sha256": "31626ae9fdca4bc4f6a2dbf4aaee925e18336775773ba438e0b04866bfd33203"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:22:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 22,
+      "text_sha256": "0133eaf9591b54147de2bc9894e5364553873c2cba0c91446e6bda5a121a3516"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:23:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 23,
+      "text_sha256": "8595f1752a5caa6cdee98ad4a7720210aecb95bcc7e637fa3f9d2748a900d557"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:23:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 23,
+      "text_sha256": "4964f1d92d73f8695cc17de0783c15573f8b8e747a4094f63ca4f6d3dc7659c4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:24:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 24,
+      "text_sha256": "fe067211b7683220cb8816c658961b4c2fe093c1d59a967288e767f0e890d790"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:24:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 24,
+      "text_sha256": "eef975766c85313b601d85dde30e62e8fdb73daa0b285ab19710f52d199be677"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:24:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 24,
+      "text_sha256": "34ac726f264f5726ce63cafd6d7d28d5cc505a3267d6d5819c6043d54e1f94a3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 25,
+      "text_sha256": "1d49f81daa5f11e4fd3f5ecab20ad2492cd0ede2247972cdc9bdf157e9b13ea2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 25,
+      "text_sha256": "0ac03c4d5ea587c6452ce67ee3845067b8deb083acfeb6279435d1428ad37ed9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 25,
+      "text_sha256": "fae7a8c6038594a8774ce108fa4f81ad9a13b773227b02fd4f908b073dfbb6ef"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 25,
+      "text_sha256": "2bb3d70a8ecfadbf3fbe780add1569dbae8343b768e3b5408619d08f874ba306"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 25,
+      "text_sha256": "ff21bd03dbb8e8effb8927aa31dde6c7fdb27d1c527165244fb88304a7ca1765"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 25,
+      "text_sha256": "1c529c9e010fbecb8ce3cb5ba1d362471b9cb9ec092e89abcd5805fd550e99a5"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 26,
+      "text_sha256": "36f5f4bb9c8bbc8a7a26b2bf36b0a4a9df15ce5240f7295cd01e7d7e8c67e7f4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 26,
+      "text_sha256": "50d4d76260d0613e6876c9e4c5400bd77c001bb9a05527b6920de9c0ca17616f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 26,
+      "text_sha256": "09dc5d9792b48d46461908ddc8f615d68774d14b704106c65efc0d40f0da8def"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 27,
+      "text_sha256": "43c421c528b956ab814c04466fe5ca8a7d6c0b15ca52ad4238d806c0fa518a3d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 27,
+      "text_sha256": "1dba09b006dc61ee26525cc393b05191a9fe5722ee2b309b0250923baddc3990"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 27,
+      "text_sha256": "65d1d73d47894e545889f8116c1224edaad986fad700a29b60d1412bad13c67c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 27,
+      "text_sha256": "f92ebd3983a85ebbcfe1b4a34efddc5b6e46e4a59007ab0604751abc65a4b1b7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 28,
+      "text_sha256": "4fbece0d1863a178a40d50075fa9821651ed0ef916cd949473d72235eadc0c48"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 28,
+      "text_sha256": "ecff3f59e92be4c30949ced49ec3e0002a30e93e55311647793ada8580b48d46"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 28,
+      "text_sha256": "495586dbbd217ccaae100a7eddc79d0d246599eda245134692c508159b889983"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 28,
+      "text_sha256": "df1d78d44259f23cfeeadf97d267888821392c3fcb14e20f1a8ab67eee18e1e2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 28,
+      "text_sha256": "087561f966adb21035b112f953fcd89ddde031c2e56d0071a137df7df56f3ca8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "aed1c5f488ea3e5d3fa47b2f1b268fb833570addc3ef15ee34c8c5b8931da96c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "0de312b7a0f0cadd2719cea1cefd8c524e1cabeaf7e5a4d24c9017ef6f5e6fea"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "a90e75c4e15954fac15d7c2239e3246ba6ebfb9c742fcd461f1c21334a760503"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "144160fce6e00e861f92a217bb6e52f4e989be6c3c6faf25de9ce33ea0832ddc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "e23bbb082ac2a825a3f1b87debc900dba1398127c3beae569ed44da1504bb1bd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "b258f1cb57e5b2f5653b802eaa0fb1bb04553406de3271f07942518401256d17"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:29:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 29,
+      "text_sha256": "609bef9b4d184edfd39e1034d7f2cc3858224a77de9834f8b275339e0dbe6913"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:30:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 30,
+      "text_sha256": "640f1c53517da5c76aeddcafec45ebd27d1e62293d8d3e3d2b7799fc32f38eb6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:30:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 30,
+      "text_sha256": "3e1164823d91da1a8068886e79d1d0809856f0d6cef26a14ca3d8d513ae76130"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:30:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 30,
+      "text_sha256": "759c5be1fa64dda458dabeaf6e30ccaa90c62f139615e9acd238553b60a40d3f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:30:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 30,
+      "text_sha256": "e364af0bfafb95f509a8a2dccb518976887c22955dd5d3d770b12c61f3a86724"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:30:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 30,
+      "text_sha256": "2afeb4fcc6dcf183599f3ae79867a309b7be257d51f5964380eba3cd24bd1736"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:31:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 31,
+      "text_sha256": "7f1c5f87359c44cbdda3f0b0960fc7eb12e01d5b38e6b78c071513f7ad6562b4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:31:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 31,
+      "text_sha256": "fcf2d6e64fd410bee58e22e76dd65bb1ccd24b552caf899f3ae9c4be31939e0d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 32,
+      "text_sha256": "96f22b330d9615d46e9c7605751c1e8e8074ce10e42d51c0e4a39e77d84bd5d3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 32,
+      "text_sha256": "f64c426e1a861107767e7909f46640f1f99f7190791aa9dbd0759ac24207bab4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 32,
+      "text_sha256": "5d07d83afa012bcbd25086796d6363eb69792db7b8e38c1526ccfbebca7180aa"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 32,
+      "text_sha256": "5a1646c5f8f6de9a67ff70e9ff3f5a22541b7306da2f6a74bc531ded9563ccd1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 33,
+      "text_sha256": "cb4612de471fd5698f1efc81ee0f1937ecea6a1ca3107dd4d422fa3793926c6e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 33,
+      "text_sha256": "4e4b850e582b7e1f7497a33ef954a3d2eb39919a75f35ee44b3055b15fd24e56"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 33,
+      "text_sha256": "7cc6c88056a4e734cb1d1c851c8fe19015b09ddc1ef1b25187233e11325fa943"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 34,
+      "text_sha256": "e696ae00ca67548ef0c5b6405d4ef42221f307ef55d127473865c02d155a9d53"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 34,
+      "text_sha256": "9e5d2c0c27f08ca8fa1eca38a26e8639b78a343c50377f4628d7c9028b9f0716"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 34,
+      "text_sha256": "1c53d5fd4bff0eb8949390b2abc8e3f486207f476b1c95995bc02d918636130f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 34,
+      "text_sha256": "545282382dd1035e8f3b3be1fc0c5127cbf42733d768dfcb0fe1e10cfb36cc91"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 34,
+      "text_sha256": "2fc973de5fb809f47039f663947f5a82d2ad5f78f2e7cfaad1f5e05df78ef138"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 35,
+      "text_sha256": "62c26a2feaa44e7607eb2d7837dedc1a14e88045a2e8539dee745daebaa05164"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 35,
+      "text_sha256": "631f53ea02035e281ca8f3d01bbcbfeebb9a97ca12458829b33e40b615ab00d3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 35,
+      "text_sha256": "675b3e0cf44929262e556a1d09db5674c5540d695aff67b2cd60bb11596af716"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 35,
+      "text_sha256": "83b9d37d26f78cbb3b2a3c72119e62cc59a60d8eee4b9539a15d486675b7d792"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 36,
+      "text_sha256": "90baa445372fa434c721102b4fb6810bf211f57f8b3d3aacc50439feac8aa902"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 36,
+      "text_sha256": "783203e37f0451feb671d2a9185f0da605a96a3b7685adfcdf7d950362f61b38"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 36,
+      "text_sha256": "5e9aea4905d648bfd4c794ab34f41ae1f7214153bceefd1f9f9c4105ae900a73"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 36,
+      "text_sha256": "2a4016fb3f927293f2a459c87c58abdfadfab96f212044f92e24a1df789ea247"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 36,
+      "text_sha256": "3f1f9866aead6e60ba4dc5db2f3745cb718e65831729f69251e75a1309d9d36d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 36,
+      "text_sha256": "4487bef301b769b13da8a08bf97de2752b73b43b5658e11c7c5e1d90fb170fab"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:37:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 37,
+      "text_sha256": "99c3b0f034f7fc146165f5e71ee6df198c162a1fc1fb186abdb7135c924fcf61"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:37:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 37,
+      "text_sha256": "560be61bb314bd795dc82eb71972d1433476d0d389bfff06256dc90c4f2d9fc8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:37:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 37,
+      "text_sha256": "3d0c205ebaaef1bb0db60ef91a5de89ff264ce4e39dda087f3de50c35ef0ab4a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:37:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 37,
+      "text_sha256": "c5de8dae4a2a0a2b82a10ee1183e1f1245915f0b7dee94037997e863ef05311f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "9713e642aa305c2cad91f1c16e16865e9f308adf001529d4b8f3c5aa17fe56d8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "a0c1aa0f58f6724e86534bf5de718e5046719c7a3f59a44e796e6b6d6a9e38ae"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "9ddabe011af37e7c862dae6ee77dfc55c49e7253ecfef988862417f8a73c3814"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "9f7b36541f96119244b300b499dc7172739d7f377909e84d7aef4f3a5e65c0e6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "1176ab14e27b28e3405728ad4f9333709a02f10ce6422999d835dd6107893cdd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "d91cdf2314784c50a00aee0a7f43616d08306f4a860416be2c1096c2870b2c1b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:38:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 38,
+      "text_sha256": "c83f041e45e9f8aa3b99df16ac3925a89b46e55720f4378b563b27dabb643d81"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 39,
+      "text_sha256": "c07adccdcadf3a019954b77e8445786993ad09faeb9d7fc800d81342440026c3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 39,
+      "text_sha256": "ba0aec27a3d341983bdead651164b0304a15ab83466ccb5fc35e6158bdad3eee"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 39,
+      "text_sha256": "6cae26cd0fa83d940452d5677240e441ef977cee0dc010a3bcdf509d38a23ef8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 39,
+      "text_sha256": "73626dacb5d5467064495b87265da2548274826970bcdbf292b53c53f9e7bd94"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "6d700506772202c5d504801778c34f37f360a70f40a10fe138df685c34ea7e8c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "92d54f173cfb539ca2c599712a8eb859e8131426fb53a89aa91b43465217ecea"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "c2ef665ed1ef295cc671d8c47421ec97a777ee368e228b8d5a505c6acd44bca8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "ce75dfe32d3dc984f9fb803ac03f01086bf0118bab0f254c2a861f270e7ea15a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "7ca6d56e52374b577f6a367e5a5ca248c63c552c4f52fdbf8108a96905aac913"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "1d93b5460a21625f8c43d962140948caf45c2d3c7d7ec277de4a82645b0a173f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 40,
+      "text_sha256": "3f9eeea5c7d03a1f6f8a6c8cc9fdc1628bc635e67c0475a0eb76f105e3f5f75f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:41:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 41,
+      "text_sha256": "e019e117d7cf2c4658e5b978581cfdf331335fba4c0fedef8a5de26d2cc5bf27"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:41:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 41,
+      "text_sha256": "17df5021d5f8909f94ecf2fdfbb551902be032ba3f2d8492f9c8eb524e9a944c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:41:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 41,
+      "text_sha256": "b8280000b2147b8e55cceaa5bf2b84e83e54f0b582cf675b84634106e71c9359"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:41:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 41,
+      "text_sha256": "d50b6e3b0a8a888984ec79d9a35f9d5e14897db93235838b2d2d4c5786fbf4ae"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:41:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 41,
+      "text_sha256": "7d90f95066b39ea03368894a4a9d31d1f20750d095f049c24395217f85b8bae1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:41:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 41,
+      "text_sha256": "f006f2469aae8e836d237afd5fc42b83190d064243e8a1c4573889d924ef70bc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:42:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 42,
+      "text_sha256": "dbc480c7b6d1a365ffc5f079ef381e77ea34d8913e3df56ebd4288eb411e6752"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:42:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 42,
+      "text_sha256": "70c835cf043554f370c66ed2e7d64cfb104c0f13aaf17293f0abe38530d89146"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:42:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 42,
+      "text_sha256": "ec75b97db1183798c0d4b75f123e549260bf5eae28d9836df34d5b87e64b6767"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:42:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 42,
+      "text_sha256": "1252277251f143ae7e4dc192330200b53d33a677e5b91439e38c0b19d0de21cf"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:42:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 42,
+      "text_sha256": "b3741aaff44707818e4affb41ad5ef72b51c9196898a9fb15480f4c6d63adc97"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:43:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 43,
+      "text_sha256": "3e522b0f1a3b73c9412e5590423e9bdee3af6609839b408da2bdc4b580682391"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:43:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 43,
+      "text_sha256": "05ab85c915978b8f0a64a8403a9058cb5a0e59057b1b694814b2d8fddc5d22d6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:43:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 43,
+      "text_sha256": "17560c7e76ecebad93ecf45b7e570b482f4d9a511a51c61e013db5db531d2b46"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:43:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 43,
+      "text_sha256": "6d8fa39335a702e8af7a0f68ae2d78c344691a9a14d55c18920d46d4e0277fbb"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:43:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 43,
+      "text_sha256": "177f3c54fcbd8af2f05fe5ee5421441479e1394f701bea0ed2a93caf1d0ecaae"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:43:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 43,
+      "text_sha256": "749d27cf3e6f7bba45ab6434f0795af3ed4f56e4ab9ca04e4ecad3e5a0cdb300"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 44,
+      "text_sha256": "45fb4b0908cedea15c8ae07ef5eee54e46247751b27e1eee5fe9216dd659bf9d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 44,
+      "text_sha256": "af9dafee6f44280db74f21c06dd81bb7e0d338352341e37512318d6f488905c0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 44,
+      "text_sha256": "bd7c8ef42df9b58c81073c8f6889c3705eac0c1bd91c3d047a2cd4cef841237f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 44,
+      "text_sha256": "71f1266c28d92c68e028fc09a918335d6cc688be91a23101a758f66c5ff547c9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 44,
+      "text_sha256": "a39b64bd3c4fc8951ba9c2ced05ce3e7a8cdd8ba4c36ecb78a63aabb7ce237fe"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:45:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 45,
+      "text_sha256": "f734245b270434c6b0d763e41c2765c4ba8913e82bf47eed3c680ffb482c1295"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:45:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 45,
+      "text_sha256": "b594a012d883d9bb73f4b1043a9a133b22b4064b75cd9b9a5ac8771304c2696a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:45:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 45,
+      "text_sha256": "15cd4632cfd2c364e10754b8c2d055698bbd064c411b511e5ec6d7e7dfae9a83"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:45:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 45,
+      "text_sha256": "0116ea7cc1a397623e96ac9b9d0aedade807db8c8aeb378cf25b78927907179e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:45:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 45,
+      "text_sha256": "f5a39f9bd981bf15241f768e9680e8c0fcc00b646be8940a58027285b89261d8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:45:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 45,
+      "text_sha256": "221ff5c6a2553ad792dc8a0fa9f524e190f6df1f91ed72adadae7bcd0eaf6bd9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:46:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 46,
+      "text_sha256": "4f72496a332bd2a38943d2e6a542332be5a19933d09e553c1cd210f8e570e08e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:46:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 46,
+      "text_sha256": "1b26c55eefc246d40db01822929af5ff916317d30e16016c6ef1c0374c606490"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:46:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 46,
+      "text_sha256": "62ece32dac098c646217c90d751c90206c00e6c2787fa90f3d62d8c78a4e6823"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:46:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 46,
+      "text_sha256": "105f31536427fde661ded14f876ea976dcda57398cafdc9656cda39e891b91f3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:46:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 46,
+      "text_sha256": "b312ad706924fb02dce66975d11e4a547a22d180439e408d500bf25b7c6693a0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:47:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 47,
+      "text_sha256": "97af00f6a89210f795bbe4f12c5f58e1742129710a98e647a770936ecf2e09be"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:47:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 47,
+      "text_sha256": "a963ca98b8a0c6f736d726c9e893c9707f658a14b31c150634bfa3246b39c3ad"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:47:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 47,
+      "text_sha256": "b3974275787792add86d6edfd22bd3fb389d0e5381d4b08f5fd1d1f8d43cf3f1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:47:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 47,
+      "text_sha256": "07c757a1ce388a3a88a7aa48171abdd928f2aff932b0ce6a181e41488bce0a56"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:47:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 47,
+      "text_sha256": "e619996feec1b370df5942b7944bedc1a5b68515c2a387a4456fc6056f2bae52"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:48:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 48,
+      "text_sha256": "756024cfe0d9d4609f062bad23f4b43d243685ad80f7146431c4005b7d86d63b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:48:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 48,
+      "text_sha256": "23425ddb6277321cc5c2bd1f9eb74eca26073fb5f3a4ab1b42854b4b91179f62"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:48:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 48,
+      "text_sha256": "8dc92db64ad58dabae0892197c888acb495f3d5476f4e370370f31e721f5a9ba"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:48:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 48,
+      "text_sha256": "5c586c03ebf5cc6b855e7e4472b5051babf8d239a3115890d323dc944cae2b7c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:48:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 48,
+      "text_sha256": "358ebf953d5202794a8fb53528b76ef2ca892947f382246df9e07add10c1bb21"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:48:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 48,
+      "text_sha256": "5195a1aac1c6c7120b16aa6df8655949240eeba299103d9ec9df20c973c30aca"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "225542561e87ed35e9deee037f3755f3b41b356ae3d510e4f0f2f9e1dfa28e72"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "766a8457634bf3c8c27081cefb45e9d9ca48543f47caf7d657fa20fa1a7d4f8e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "ffcdc8e412d49c3045a7936f4f7f0998c3d22e866b765e7f874d5ba1472d61d8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "d0c156b27f1d2a20c624eb0a8e803ae88d366b84e152641390399dd3715ac625"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "0ce3efbfa2d6969a86d6b44861277d859e55f3569feeeb1c988c79cdc9edb601"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "f5e98fd4240e549fcac8e7fb248b7eede6731926e9288d552298b5b0057b0b0a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:49:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 49,
+      "text_sha256": "28bee28383a0ef3e2c218069dfd8e604db10d0f5b24017e490f79cba8e73bfab"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 50,
+      "text_sha256": "61ac48811cd83a2e53e93df11f00920c9779fb343b61fee6f3ca01ef214f0cae"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 50,
+      "text_sha256": "1c077f2a34c3a2c99f4c822749070e7e8ebe7bc6d90bee733f14f396ef68d32f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 50,
+      "text_sha256": "9b4fcb434c6e6253be854d0d5e3f36a56e0310eff5bc313ab776052b834822ab"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 50,
+      "text_sha256": "3b4ea33a79388cee3153f3a5e41c283e920efb1ddce009bf56039a4550c2e4ec"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 50,
+      "text_sha256": "7fb56a134bd0ea535bf23ae791555f26b257eb5813f337491a69f326b0647982"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 50,
+      "text_sha256": "353499f43c1e2b37a2e6dd67cd21454d8fcf3e3b938464eb2f8fe5e69097a12b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:51:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 51,
+      "text_sha256": "bf23f55c8925dd6d2b7e1d78f9a12013c9b07cd44f2635038d903da4a18c0030"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:51:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 51,
+      "text_sha256": "438d1b19724c98cda5531f1457d2c9b6f21e768074072976c596df34cfcf68ed"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:52:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 52,
+      "text_sha256": "6addd66466a192c76bd84c93842835e9c7a33c5accb407f5730e3cdada4386db"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:52:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 52,
+      "text_sha256": "d0e552fea8e8319ea7b7a174b539bdffdc40bd12c93d139d0e8ec7c7df2529ec"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:52:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 52,
+      "text_sha256": "472a57f776794f61a2fa2c7746bd233e3b83c188dc40eb583866e218e4ffbc8f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:52:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 52,
+      "text_sha256": "406e4f09ac86491870784198663ebb42bd9731b78add62e0ddc47aabf18b8bb0"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:52:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 52,
+      "text_sha256": "9f885f4418f82597e4f86d0ccc98a4fbf1481125caf7833889db55d7668f932c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:52:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 52,
+      "text_sha256": "b8217edf1816d18f35afcc5eb554343f355c41cbd19fad8af609a30c217eebb9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:53:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 53,
+      "text_sha256": "209bc11dd73d0cb6b1001243a6f5a78858819d9adc0eaca86bec46096cc7e85a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:53:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 53,
+      "text_sha256": "6067b89c4dd5e47e8042a547c339ab1ff3cbe482b4e977d73e30076afafe30a2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:53:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 53,
+      "text_sha256": "c22e264921f97b359d41ae1d535db67daa9c648ea01dc4d36e259ef322822497"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:53:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 53,
+      "text_sha256": "c40e78d4cb86f64a39bcb3237ca683c729b29106bbd1fc7f99b97ee11ab9c18c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "ba74ea2599fe71a4d5a3475bb675e8da9551b1c42afbf961fc8e629d6f67bd16"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "c4efda3d70c3978cd3a8a85e3ea19898e96039a103a823f069badb32e1bac0c7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "5b772b2faff485a9817e1d2745ef69140a838b5e3db09bbc3baa3a013a93f9c6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "e70ebc8882326bab3af75abdd40186a044d0b7a132eac44ca22bd7ecc8439bac"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "f88055f369b8fbc4ec73277da2c88720f9e9f92d2211ed03bcb2517423978220"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "5570dc10eca2427efe8fa8299602b374e378da242c6a127bf09fc13774ffb308"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:54:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 54,
+      "text_sha256": "332c03c400b644c1eee896b9a65555e78b75b4849c4d1cfd4ddb087eb4dba56c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "eca705436fa9fc1999186d7014b5e4d40d8e84c09e70d566c250af49d73f081c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "a7cc13797c0b263f0ca7a9f29e8cc1f7d3c5ff2f2300f3e8db707c6998840d26"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "72010087b91b894bb483c44d7fa053e700bfb3f7eee074a05c10b0db2282cbf4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "3f4c5f98e3c97c3e6e9c98755d7fcfa002ef79e0b7d60e1dcbf8dedae4cee391"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "7fb4115f7d3c64a7f0a589f58ddc934ed623f477d4dacd6d8679128c30d44514"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "52a395688b73319d4884e426ae3425b948b9f0061862e1b6b2a150c77fc1ff3f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "07ee0b354d7244e02da6261b5c857372755bbd663e38d694a2769917712d9daf"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "688ddf9f266852759c6ebe0f4489d9610d128cf7c132007bc45f1ec87e08b52c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:55:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 55,
+      "text_sha256": "feb0c8826cd9ee0c77dc53819450dcbbfb12e64ada05e16ec8befd5d359597fb"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:56:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 56,
+      "text_sha256": "531488c16aac17c22b3077d86bc2b9d8e429f8ea43fcfa65b38a3165f361b459"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:56:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 56,
+      "text_sha256": "cd308409f9ef25685ed971db3865f3993137ae6e73940034e6c754e8d5d410d3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:56:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 56,
+      "text_sha256": "40381028c694fdaafcd8f0d7cea2a25296937e0e0918c9a58c71d9b4dfd378ab"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:57:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 57,
+      "text_sha256": "03ce6db63792bdeeb6a31e225b533913b2641031ab43fe29b2caa080de88137a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:57:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 57,
+      "text_sha256": "f6e7ab3e684472668fa30b3d80c3dbbfdd3f0986475fe3dbf48489432f93bf1f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:57:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 57,
+      "text_sha256": "dde0629f3078bacd896b5902e4d05dd71462978c10dddae4942c4a47b17909d8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:57:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 57,
+      "text_sha256": "517b15e06cfce6b1a8c17ee4eba6ad321476ccd0bfe72be708182c0591fe9542"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:57:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 57,
+      "text_sha256": "996038fa803ed53ea68f3b53a50134e99502e944815ccf01611346a9a01f7146"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:57:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 57,
+      "text_sha256": "05de51ba4af4091a8837b1967811b0f7f0075bfb259e69fd44c98d6e04aab841"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "2dcba35e1d1720c552e471afadc482d1b699d95039e1d63e9eda175d7c281aba"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "c5a5db2d31ddc9251e4d454c6640562dd4929b7bfcff5fa22c494fc6c7526f3f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "d238a74f8dba3d6ddafeca421b8ced05ae2a520ef6abe874d51cf840ab22cacf"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "26524a01b8f2d1ac07f10f5dbff2c6a0b6c70c7c1935042a2bd3fcd454261159"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "8e5c9750ed747d0223822911cddd818e95d99b21cce11a65f52ff59512bd7f10"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "47667e27beec83af51988287eb8a79a944b20e61aabfe842de4886ab3eccee6e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:58:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 58,
+      "text_sha256": "90e37dbd1cc067f2e8b5ab4639c05478846e77b069ab0839d94e5d05ccb3f3e8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:59:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 59,
+      "text_sha256": "7b49959aa84cb2d2626328680b77f4a61800e1cfa646d338641c2103ef723582"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:59:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 59,
+      "text_sha256": "bb86717db5adda1ba1aaf12c8b7a4e29a653e32b7527aebacec256ecb62cf780"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:59:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 59,
+      "text_sha256": "2a7fbc37864138df083640464ae09823b8efb49a911e6473b99baa6e0cd35021"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:59:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 59,
+      "text_sha256": "0486958d40513b8dc0ef5409f78dc4fa1fcbf8d4bbf6f5ea4d5e7496912eb844"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:59:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 59,
+      "text_sha256": "29c0b3c25761174c662c1fc19521fce26620d73bd0e35e2b784b038b09b1104b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:60:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 60,
+      "text_sha256": "a4ea09f936e2c9e5af89b7fa3da40719abf84f0521e7b8d524d53511ea0c669c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:60:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 60,
+      "text_sha256": "513f7bf6a03444e7a5496e6cc3ff1809f5fb512fd972382725a1ccf62c9070c2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:61:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 61,
+      "text_sha256": "9f08c35fb5befeffc121563c2dd624971604829a52794f825b808fd3ae0eeba4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:61:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 61,
+      "text_sha256": "3f20a67f849e7c5bb6fd7867b35a018416945fc1e8888b63434d7a2cfdf9ea83"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:61:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 61,
+      "text_sha256": "2f8a3fab0f08fd0eea52205a8c2ab03a3a1bba38d461ef9ea6da0277e9084e02"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:61:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 61,
+      "text_sha256": "ca73e46cbf583d404847f23db321a6088a543b35122a2bafcbd69deede6ae25e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:61:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 61,
+      "text_sha256": "5af368690c3d3bde40c60682b7cba08d1dff78161db4c3c36299b7791d9e803c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:62:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 62,
+      "text_sha256": "b53becfb06c1f13b7bb87da4a67c779d8e991334c636a156ea565ca9e0387335"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:62:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 62,
+      "text_sha256": "2a125c23a2628db666bd036f6d2a38ad602fc7079e05beda80942a0828c244b2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:62:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 62,
+      "text_sha256": "8948193bf90869c505b42417c05702c84a6d040db47e83aeb3562c0724e5a6de"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:62:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 62,
+      "text_sha256": "28a2747e56f6a6dcf63aa2086339b83c272159ed9aa08933b2b7f87007936332"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:62:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 62,
+      "text_sha256": "370d8564c7a7ef1c8fcaca178d650e5a8b9720fda2b521d6935d8313e2f1bcfc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:62:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 62,
+      "text_sha256": "c911bb555a8d89a5abe2b465ac13c347c79a9d9c30e3d780a6f05d10265d3e0b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:63:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 63,
+      "text_sha256": "3b313466ff233bb19539b4d43d960c16210f0432522babce59803d0f0a4d4524"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:63:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 63,
+      "text_sha256": "34fe19dcfa0fdd5afd26e995b56f54226d7fdd92aa85e0ea37b933ca12dba466"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:63:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 63,
+      "text_sha256": "67b7ed591505cfb6136cf033bc564338efded6c29b1d1e2d0ce73973b5d058d7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:63:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 63,
+      "text_sha256": "1a9b06f29111736442ee8344f92fc86a79c89039e6010b96b4a2fb56d08fce2c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:63:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 63,
+      "text_sha256": "062bccb7ccb750554c3e4ec92cd00b410221458436497da1f6328f04c7e21a2b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:64:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 64,
+      "text_sha256": "97210935418a06932871a1f3b98123a3167bee10125500e949ce98fa47075d92"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:64:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 64,
+      "text_sha256": "4029bbb6fcb53a9c9b9ed65d21be85346e284700b2bc94e23d9e14cbc4a73914"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:64:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 64,
+      "text_sha256": "3a6bac736135ee4eb2e55219c2d6ec88db717dc4354f8da3134204457771b0f7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:64:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 64,
+      "text_sha256": "9de3462207d5b995e3197fc364faab4f7612d82ecdf11a46887a89ede955b97d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:64:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 64,
+      "text_sha256": "a4cff9f4b29b17f652b555c2a1a198c38bd7f816f435d42d7bff08a48b456e27"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:64:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 64,
+      "text_sha256": "36a39b72faf84b349653c41e83a8a7ad91bbd2472d20558c1b96029f02a9135a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "b58e2894659a0747ce6ebc209e33ab776536efc73007d119482c3a9794231bf8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "9cfa112bd89b12730e9ae59505564e7311c5e7b04064a5d9a3bf0b2c1ef78054"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "3d8077a3f83afaf0ea83a552cda61b04c483a2747efb266be7fe492e8ea55d78"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "ab4aeedf950209906b11f82f3356ccaaba31bb36c8830d792b429bd0af0e3a76"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "f990f5ae850b1e849952140a6d66cfb54ff9271fdc9ffe106db37b643597f848"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "3a12b58f94389808134f5b51c2c49149a32b15e0870e3367e9b6e841eb926977"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "4881c92237d17d458a4b5de333f619af2e168563d83d3542a01f53b3074628dd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:65:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 65,
+      "text_sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:66:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 66,
+      "text_sha256": "67c2cf3ce32ea52d71f42675570377e6bd6ce78a678a7b3277c5e85c877ac141"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:66:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 66,
+      "text_sha256": "4b9be55356a4de25cfe501bea0afdbd4cbaac7cfdc8a2d3f653ab42e449c850c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:66:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 66,
+      "text_sha256": "2e0d4fd353d644180b9c46d59a577d900132abeb738b16cf758fa0e4bb923393"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:66:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 66,
+      "text_sha256": "e019e9fb12aa37290febcad8544686e551b29822169a64e3e3e02eb744a9ed95"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:66:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 66,
+      "text_sha256": "f9056c99794c25ecddb59a67ccc3755a2ed0b040efbf458c262c005dcf9962d9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:66:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 66,
+      "text_sha256": "b7de9a52fa000114d922ae8d330a0729f6d54997b533c70b9e6b28386655806e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "4c54ea9956fdcd65b63bb7df3c79925654a9b4805bda20bd42816150881b3367"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "d1a4383850290f7c01a39a24ff25a638ced88823c521f4672f3856c0b1e83d36"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "8a33321dd139c8b3e3a7106732064a3e26771f3aeabd179bcbe5880e74fc2bec"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "ee1afcbde928b69b935481680bcd487af11198a57ee6b1ff0622a75ce52a4397"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "2ce91a48d5c28fc1aa937082a75bca68dfe2c1bfe6b166f70548cd1b751b546b"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "8a14a657bea37ceb9bdf1a29b2e44329d4d031b0756b92cb8f0a19ec38f2c8a3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "d01dc96c823d1ca949539e3851314b0a35f73c5848013d13909a060f54d34dec"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "808d2cd868cf894c0f691d250ff787923b8ccdba0f106e8909143c830eec6e3f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:67:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 67,
+      "text_sha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "0596ca3107ad472308023f46e003a2cbf8ac079e107d24ca0892d576a4ff1a62"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "b0b6ea2137f92fbade9a5cbcb58c02c6fe575fef83c9e55779f1e2e89a9ac2d5"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "f5fc15ceac1b102be18b8d618c9d99b435b96f9a6be9d07e7dbd45073a9ba010"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "5b88cd1b7b577db27c80c3cf9ccae77e32224c0cc5c86160ab6cea303e657210"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "df2c0645a4af4751ea24eb22148b302af4ee95b5c8b41c3cfa68ff6ff6e6e58c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "b81251607fc1ced947ea2d822e6b0e2025fde8f90a3edbcffa956520e7cbaf29"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:68:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 68,
+      "text_sha256": "173daa45c7838439853c7451483b7ea7b55a096a1bc600337c39a8a76088d3db"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:69:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 69,
+      "text_sha256": "358239e2dfbbe5488d8458afa5849d3c5bf4bed8b617af9592b9af774368b0c6"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:69:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 69,
+      "text_sha256": "a912840d54f0613e061a2787c53f331a75a09a38e6b59d52c7c0a2b9391d439e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:69:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 69,
+      "text_sha256": "be6d67d2ce7b0ead0834b5ab702d2219c5fc5050756fb1a540b8b90414e6d733"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:69:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 69,
+      "text_sha256": "6143c411a1399b104a8c4e91a74ec2bb6cc1b14ff41e047ff558314dfb2773d1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:69:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 69,
+      "text_sha256": "48e3e4cb8954ea54c09095b35b2623812acb89fd124920dc694d702d84dce55e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:69:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 69,
+      "text_sha256": "d1ad6b770b87fc4a3f4667f60f9ca976312f5dc3c65c3c3cd1b93ba0ceff0db9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:70:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 70,
+      "text_sha256": "e3a421d54a950ac545c488af64e67145383296c6dda4f4616b84c2c543895225"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:70:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 70,
+      "text_sha256": "78f818b9257e2756f798ca743a3bce5ef8a5b291ec5c042ca8386f0362aa9798"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:70:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 70,
+      "text_sha256": "dcb85bbad85b1941b9eb0b4331b8f17da89fa00593eede0ed57710b48bd96dad"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:70:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 70,
+      "text_sha256": "404923a04d1df2c30ffa1cd59e3e0d918dca727df6df110b486e6c3c565c19cc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:70:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 70,
+      "text_sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "19fb4b416e8167f9a689ae9904a4636d64e7764f05a993aeaf4877d115c252fc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "53cecdf1ec1ae1bd735b632d5148319f304dc1f735fc75b32b8bd6e622f63086"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "3243e67375a08cbac3a0db3b0d540ccacc94739b80b3ff8458c9fd15cea433c8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "2c781074c524cc3eb0de8b7644b1a3a2aecce522bbcbdcbf159061ea95b6f9df"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "011e294f787d8157fbc098dc489666be73d68451dab33c8a98d9e1c01de44d54"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "c1a44c50f85a63980995e004a0c78667ad800561c56b584d67ae719491afea29"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "80153468559917f5dbf1668e11c5c0d744beea52b15f749d3bd81d6bad4aae3e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "6acbde8db63c20c9d5b69d2d146f2d4888693d3b7eda750fbe29851c0b3bbc71"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:71:8": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 71,
+      "text_sha256": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:72:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 72,
+      "text_sha256": "a4cecfd465fdda11f4402f6512788e05636c467bd30a420157472b208ab0de2f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:72:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 72,
+      "text_sha256": "58a3fe556202d7b8bf737ccab978fdf216d813650ef8b9f91bd6cecd5c337b35"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:72:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 72,
+      "text_sha256": "05e58d0b148f90c45cf3f59306ca12bf75452602ea98a056edb5b66bde3c8ee9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:72:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 72,
+      "text_sha256": "1c9c9ee7bf05bc7733d534d9c0de522867c1a0428ff2b230258d7162caa17b0c"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:72:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 72,
+      "text_sha256": "03554c7065d90e5e5a87b3723c7a7c451db7bff52650293f40addb51008869f3"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:72:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 72,
+      "text_sha256": "a4ed7a3ff0e9cd63f42f6eea4b859d80825655baa3ce52c319fa765c471f88a8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "3f227f40cb38c0aaf258ceed16f7acdabe01b0af3c4a2d2722c6deeb096dcaa8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "52e5a60acc039e0170c07a66fabd974af1a9fa3bc33b029194335086eb12904d"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "cd66f24102dd6e60ea8d0adf6e01c08b4b3081482fa270722b7fe72e6a988d29"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "e51e61acf837ea424c4578d5f86e3fca39bd3cd0b340a5d4944252051b9aa7ca"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "802266e5a3d2c51265c2845035a65e5582adf3009a1b5f9d5f5fadc4a64dfacc"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "baa163e061f1c4b6b3a3c28fcaebd48fc2c8b88ec751af58095a498e5d50d757"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "931c516446824572d3c377a51a0b1e22de3c3cf5e712d9bd0731bfba0e98cbee"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:73:7": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 73,
+      "text_sha256": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "9dab63d48f066b724735d671269faba5d2db15f4b886cf052999fafff5e4b8e9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "b5856d96b538e2efa8d8542cb60027d4774e8bdebd8e803b432f24e4535b9928"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "85c3305d427df061677f6978a1ce21176f23685fa772f569c44fa29751d5e962"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "b7b28aee779ec07f8c9a26dbdde62bd6e29dc6156b08cce0ab739801ae65235a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "464c6506f8b6a86b4d7f96ed0a0437ab36d02c42a7a6f88fb923652197785a3e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:5": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "09be88f7bcc69055469f5c34eeb216515dd6503d3c862d2b78a16e981c6f97ea"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:74:6": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 74,
+      "text_sha256": "4e7e85f53818b23843d367fa51128fc20959200053aad6748fd55e729db53ee2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:75:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 75,
+      "text_sha256": "c27b1d87dc09c2f1ebf857aeeb00bdbcf44bc5c66d174fd30e69479562a17e9e"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:75:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 75,
+      "text_sha256": "229ed9f46476bf0845efe8be690e3e33d00b2d14760b38ca3ddffb476e06e2a9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:75:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 75,
+      "text_sha256": "326107dc832a7994fc79e16e7a5951d6cb576f1291ea16d182edbb22abe5c89a"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:76:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 76,
+      "text_sha256": "36a5619a0130726f4d4a8c930f7f881d7cad9dd82d9b4993ba1064ec3ef74784"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:76:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 76,
+      "text_sha256": "da027b0c2921fd806c7e1e809b5be29db49c6768983f1773925d62d89bdae7fd"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:76:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 76,
+      "text_sha256": "d589ea5f8daefa54cb7ee802c2efc7373a9ec8e148b7515a424f3043b5876011"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:76:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 76,
+      "text_sha256": "484ab9b9ce90e5995f501c62c27f7a6c799739d3644830dd74e58945be9bbde4"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:77:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 77,
+      "text_sha256": "45083c44cfef27907db21a99d9512b8195d4665c4792c605048e37d1bf4d9716"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:77:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 77,
+      "text_sha256": "bfa408f38396e1add9a09f60fa5145f34315f380152b353d5b31c0a0d4548b62"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:78:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 78,
+      "text_sha256": "eff3d596ab3d748ee4ec301d85b3e03be8301aa41a4ad022dc54375180268e7f"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:78:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 78,
+      "text_sha256": "fd2eb3ad573146eacf34b2b796da43fee11046cdb921d4e3c29ab39ac3c72435"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:78:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 78,
+      "text_sha256": "265ad0e77d882c9bab166f110b2977cfd92faa4281aa414eef33d02629f1bce2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:78:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 78,
+      "text_sha256": "4008ecb526508b395c43d22fc3d79e6c916bd91cace6a057472843fb388c9ae8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:78:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 78,
+      "text_sha256": "5be3cba7bd6f1a5f86c053f4f1996e6af93533ebaa84af5d488b80eb07a7adb9"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:79:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 79,
+      "text_sha256": "8d780fc4e1c2410da9cd2b3e37856e01cfc962c74fc8dd04e280ccbe1ea6ef31"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:79:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 79,
+      "text_sha256": "fd2eb3ad573146eacf34b2b796da43fee11046cdb921d4e3c29ab39ac3c72435"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:79:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 79,
+      "text_sha256": "265ad0e77d882c9bab166f110b2977cfd92faa4281aa414eef33d02629f1bce2"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:79:3": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 79,
+      "text_sha256": "4008ecb526508b395c43d22fc3d79e6c916bd91cace6a057472843fb388c9ae8"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:79:4": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 79,
+      "text_sha256": "a84336c19e7be17361cf62d18eaac5014d37599133179eea88efc4fc52d25bf1"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:80:0": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 80,
+      "text_sha256": "cc9dff2239c4dd91242c2958167bd6717b67f6c792c98308d994be3fee8f7094"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:80:1": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 80,
+      "text_sha256": "2ade3b214923b3fbd80b3f9df462b52b218b4c8ccbc827b4fe09757753519a55"
+    },
+    "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:80:2": {
+      "document_name": "apple_2025_10k.pdf",
+      "page": 80,
+      "text_sha256": "103a690bd64ccaf76af71fa156615ecb0f306772d517331056643bf55429b73d"
+    }
+  },
+  "questions": {
+    "a01": {
+      "question": "What date did Apple's fiscal year 2025 end?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "The cover/contents/certifications and annual-statement headers are valid alternatives; not just gold page1.",
+      "requirements": [
+        {
+          "id": "fiscal_year_end",
+          "description": "FY2025 ended September27,2025.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Explicit fiscal-year end date, including certifications and contents heading.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:1:0",
+                  "excerpt": "For the fiscal year ended September 27, 2025"
+                }
+              ]
+            },
+            {
+              "review_note": "Explicit fiscal-year end date, including certifications and contents heading.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:3:0",
+                  "excerpt": "For the Fiscal Year Ended September 27, 2025"
+                }
+              ]
+            },
+            {
+              "review_note": "Explicit fiscal-year end date, including certifications and contents heading.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:1:0",
+                  "excerpt": "the fiscal year ended September 27, 2025"
+                }
+              ]
+            },
+            {
+              "review_note": "Explicit fiscal-year end date, including certifications and contents heading.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:80:0",
+                  "excerpt": "the fiscal year ended September 27, 2025"
+                }
+              ]
+            },
+            {
+              "review_note": "Explicit fiscal-year end date, including certifications and contents heading.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:80:1",
+                  "excerpt": "the fiscal year ended September 27, 2025"
+                }
+              ]
+            },
+            {
+              "review_note": "Consolidated statement headed Years ended, first date column September27/2025.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                }
+              ]
+            },
+            {
+              "review_note": "Consolidated statement headed Years ended, first date column September27/2025.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                }
+              ]
+            },
+            {
+              "review_note": "Consolidated statement headed Years ended, first date column September27/2025.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                }
+              ]
+            },
+            {
+              "review_note": "Consolidated statement headed Years ended, first date column September27/2025.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a02": {
+      "question": "根据年报，Mac 个人电脑使用什么操作系统？",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "complete_fact",
+          "description": "macOS.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:4:3",
+                  "excerpt": "Mac® is the Company’s line of personal computers based on its macOS® operating system."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a03": {
+      "question": "List Apple's five reportable geographic segments in the 2025 annual report.",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "complete_fact",
+          "description": "Americas, Europe, Greater China, Japan and Rest of Asia Pacific.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:2",
+                  "excerpt": "The Company’s reportable segments consist of the\nAmericas, Europe, Greater China, Japan and Rest of Asia Pacific."
+                }
+              ]
+            },
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:0",
+                  "excerpt": "The Company’s reportable segments consist of the Americas, Europe, Greater China, Japan and Rest of Asia Pacific."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a04": {
+      "question": "2025 财年，苹果直接与间接分销渠道分别占总净销售额的百分之多少？",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "complete_fact",
+          "description": "Direct channels 40%; indirect channels 60%.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:5:3",
+                  "excerpt": "During 2025, the Company’s net sales\nthrough its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a05": {
+      "question": "Approximately how many full-time equivalent employees did Apple have as of September 27, 2025?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "complete_fact",
+          "description": "Approximately 166,000 full-time equivalent employees.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:2",
+                  "excerpt": "As of September 27, 2025, the\nCompany had approximately 166,000 full-time equivalent employees."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a06": {
+      "question": "Which fiscal quarter historically has higher net sales, and what seasonal reason does Apple give?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "quarter",
+          "description": "First fiscal quarter has historically higher net sales.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:1",
+                  "excerpt": "The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seasonal_reason",
+          "description": "Higher sales are partly due to seasonal holiday demand.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:7:1",
+                  "excerpt": "higher net sales in its first quarter compared to other quarters in its fiscal year due in\npart to seasonal holiday demand."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a07": {
+      "question": "Why did Greater China net sales decrease in 2025 compared with 2024, and what partly offset that decline?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "decline_driver",
+          "description": "Lower iPhone net sales drove the FY2025 GreaterChina decline.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:4",
+                  "excerpt": "Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "offset",
+          "description": "Higher Mac net sales partly offset the decline.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:25:4",
+                  "excerpt": "Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone, partially offset by\nhigher net sales of Mac."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a08": {
+      "question": "According to the 2025 report, which three areas primarily drove higher Services net sales?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "complete_fact",
+          "description": "Advertising, the App Store and cloud services.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:1",
+                  "excerpt": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store\nand cloud services."
+                }
+              ]
+            },
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:2",
+                  "excerpt": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store\nand cloud services."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a09": {
+      "question": "What were Apple's iPhone net sales in FY2025, in USD millions?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed both complete category tables; a numeric row on its own is insufficient.",
+      "requirements": [
+        {
+          "id": "amount_period_units",
+          "description": "FY2025 category net sales, correct first column and USD millions.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Same chunk includes USD-million/FY2025 table context and the correct sales row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0",
+                  "excerpt": "The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0",
+                  "excerpt": "2025       Change        2024       Change        2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0",
+                  "excerpt": "iPhone                                      $   209,586        4 % $   201,183"
+                }
+              ]
+            },
+            {
+              "review_note": "Alternative disaggregated-sales table has same FY2025 amount, million-unit header and first-year column.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0",
+                  "excerpt": "The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for\n2025, 2024 and 2023 (in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0",
+                  "excerpt": "iPhone                                                        $     209,586  $     201,183  $     200,583"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a10": {
+      "question": "2025 财年 Mac 净销售额是多少（以百万美元计）？",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed both complete category tables; a numeric row on its own is insufficient.",
+      "requirements": [
+        {
+          "id": "amount_period_units",
+          "description": "FY2025 category net sales, correct first column and USD millions.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Same chunk includes USD-million/FY2025 table context and the correct sales row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0",
+                  "excerpt": "The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0",
+                  "excerpt": "2025       Change        2024       Change        2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:26:0",
+                  "excerpt": "Mac                                                 33,708       12 %       29,984        2 %       29,357"
+                }
+              ]
+            },
+            {
+              "review_note": "Alternative disaggregated-sales table has same FY2025 amount, million-unit header and first-year column.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0",
+                  "excerpt": "The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for\n2025, 2024 and 2023 (in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:0",
+                  "excerpt": "Mac                                                                       33,708         29,984         29,357"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a11": {
+      "question": "What was Apple's Services gross margin percentage in FY2025?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "27:1 overlaps total-margin row but lacks FY2025 column context; page identity or75.4 token alone is not support.",
+      "requirements": [
+        {
+          "id": "margin_period",
+          "description": "Correct FY2025 gross-margin percentage and category, not gross-margin dollar amount.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "The first chunk contains the complete ordered-year header, percentage section and value row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "Products and Services gross margin and gross margin percentage for 2025, 2024 and 2023 were as follows (dollars in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "Gross margin percentage:"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "Services                                                         75.4%         73.9%         70.8%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a12": {
+      "question": "2025 财年苹果的总毛利率是多少？",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "27:1 overlaps total-margin row but lacks FY2025 column context; page identity or75.4 token alone is not support.",
+      "requirements": [
+        {
+          "id": "margin_period",
+          "description": "Correct FY2025 gross-margin percentage and category, not gross-margin dollar amount.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "The first chunk contains the complete ordered-year header, percentage section and value row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "Products and Services gross margin and gross margin percentage for 2025, 2024 and 2023 were as follows (dollars in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "Gross margin percentage:"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:0",
+                  "excerpt": "Total gross margin percentage                                    46.9%         46.2%         44.1%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a13": {
+      "question": "What was Apple's research and development expense in FY2025, in USD millions?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "27:3 is R&Dgrowth discussion, not the expense value. Alternative statements require explicit header context; negative segment expense shown as magnitude.",
+      "requirements": [
+        {
+          "id": "expense_period_units",
+          "description": "FY2025 R&Dexpense USD34,550million.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Operating-expense table provides year columns, million-dollar unit and R&Drow in the same chunk.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:2",
+                  "excerpt": "Operating expenses for 2025, 2024 and 2023 were as follows (dollars in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:2",
+                  "excerpt": "2025       Change        2024       Change        2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:2",
+                  "excerpt": "Research and development                     $   34,550         10 % $   31,370          5 % $   29,915"
+                }
+              ]
+            },
+            {
+              "review_note": "Statement R&Drow needs its separate statement header for year and monetary units.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:1",
+                  "excerpt": "Research and development                                              34,550         31,370         29,915"
+                }
+              ]
+            },
+            {
+              "review_note": "Segment table shows consolidated corporate R&Dexpense magnitude34,550; unit sentence is in preceding chunk.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:1",
+                  "excerpt": "The following tables show information by reportable segment for 2025, 2024 and 2023 (in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:2",
+                  "excerpt": "2025\n\n                                                                Greater                  Rest of\n                                  Americas    Europe      China      Japan     Asia Pacific   Corporate       Total"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:50:2",
+                  "excerpt": "Research and development          —     —     —     —      —        (34,550)      (34,550)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a14": {
+      "question": "What two cost categories primarily drove the increase in Apple's R&D expense in 2025?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed literal narrative support, including every matching alternative chunk in the copied corpus.",
+      "requirements": [
+        {
+          "id": "complete_fact",
+          "description": "Headcount-related expenses and infrastructure-related costs.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Original narrative states this fact and its qualifications.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:27:3",
+                  "excerpt": "The growth in R&D expense during 2025 compared to 2024 was primarily driven by increases in headcount-related expenses\nand infrastructure-related costs."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a15": {
+      "question": "What was Apple's effective tax rate in FY2025?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Reviewed both tax tables; statutory rates and deferred-tax amounts are different facts.",
+      "requirements": [
+        {
+          "id": "effective_rate_period",
+          "description": "FY2025 effective tax rate15.6%, not statutory21%.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Tax discussion table is complete in28:0.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:0",
+                  "excerpt": "Provision for income taxes, effective tax rate and statutory federal income tax rate for 2025, 2024 and 2023 were as follows"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:0",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:0",
+                  "excerpt": "Effective tax rate                                                      15.6%         24.1%         14.7%"
+                }
+              ]
+            },
+            {
+              "review_note": "Alternative tax reconciliation splits the2025/2024/2023 header and effective-tax-rate row across adjacent chunks.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:0",
+                  "excerpt": "to income before provision for income taxes for 2025, 2024 and 2023 is as follows (dollars in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:0",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:44:1",
+                  "excerpt": "Effective tax rate                                                   15.6%         24.1%         14.7%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a16": {
+      "question": "As of September 27, 2025, what was the combined balance of cash, cash equivalents and marketable securities, in USD billions?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "A header naming these assets without the total/components is not sufficient.2024 restricted-cash footnotes and derivative notionals are unrelated.",
+      "requirements": [
+        {
+          "id": "combined_balance_date_units",
+          "description": "Combined cash,cash equivalents,marketable securities at Sep27,2025, aboutUSD132.4billion.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Direct combined-balance narrative includes requested date, components, amount and billion unit.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:28:1",
+                  "excerpt": "The Company believes its balances of cash, cash equivalents and marketable securities, which totaled $132.4 billion as of\nSeptember 27, 2025"
+                }
+              ]
+            },
+            {
+              "review_note": "Financial-instruments table:2025 FairValue total132,420million=132.42billion, rounded1decimal132.4; header and total must both be retrieved.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:0",
+                  "excerpt": "The following tables show the Company’s cash, cash equivalents and marketable securities by significant investment category\nas of September 27, 2025 and September 28, 2024 (in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:0",
+                  "excerpt": "2025\n                                                                         Cash and     Current    Non-Current"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:2",
+                  "excerpt": "Total                        $ 134,711  $     736  $    (3,027)  $ 132,420  $    35,934  $   18,763  $     77,723"
+                }
+              ]
+            },
+            {
+              "review_note": "Overlapping total row is still2025; it precedes2024 header in40:3 and requires2025 context40:0.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:0",
+                  "excerpt": "The following tables show the Company’s cash, cash equivalents and marketable securities by significant investment category\nas of September 27, 2025 and September 28, 2024 (in millions):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:0",
+                  "excerpt": "2025\n                                                                         Cash and     Current    Non-Current"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:40:3",
+                  "excerpt": "Total                        $ 134,711  $     736  $    (3,027)  $ 132,420  $    35,934  $   18,763  $     77,723"
+                }
+              ]
+            },
+            {
+              "review_note": "Balance-sheet alternative requires date/unit header plus current and noncurrent components:35,934+18,763+77,723=132,420million, rounded to132.4billion.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:0",
+                  "excerpt": "(In millions, except number of shares, which are reflected in thousands, and par value)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:0",
+                  "excerpt": "September 27,    September 28,\n                                                                                        2025             2024"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:0",
+                  "excerpt": "Cash and cash equivalents                                                 $       35,934  $       29,943"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:0",
+                  "excerpt": "Marketable securities                                                                  18,763          35,228"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:34:1",
+                  "excerpt": "Non-current assets:\n\n    Marketable securities                                                                  77,723          91,479"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a17": {
+      "question": "What was Apple's net income in FY2025, in USD millions?",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "Five statement locations were reviewed; repeated valid pages count without changing Phase2 goldpage32.",
+      "requirements": [
+        {
+          "id": "net_income_period_units",
+          "description": "FY2025 net incomeUSD112,010million.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Alternative complete consolidated statement includes unit,date columns and net-income row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:0",
+                  "excerpt": "(In millions)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:33:0",
+                  "excerpt": "Net income                                                     $     112,010  $      93,736  $      96,995"
+                }
+              ]
+            },
+            {
+              "review_note": "Alternative complete consolidated statement includes unit,date columns and net-income row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:0",
+                  "excerpt": "(In millions)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:36:0",
+                  "excerpt": "Net income                                                                 112,010          93,736          96,995"
+                }
+              ]
+            },
+            {
+              "review_note": "Earnings-per-share computation includes net income in millions and2025/2024/2023 header with numerator row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:2",
+                  "excerpt": "The following table shows the computation of basic and diluted earnings per share for 2025, 2024 and 2023 (net income in\nmillions and shares in thousands):"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:2",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:2",
+                  "excerpt": "Net income                                                 $     112,010  $      93,736  $      96,995"
+                }
+              ]
+            },
+            {
+              "review_note": "Operations statement needs header chunk plus row chunk.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:2",
+                  "excerpt": "Net income                                                     $     112,010  $      93,736  $      96,995"
+                }
+              ]
+            },
+            {
+              "review_note": "Shareholder-equity statement needs unit/date context plus retained-earnings net-income row.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:0",
+                  "excerpt": "(In millions, except per-share amounts)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:35:1",
+                  "excerpt": "Net income                                                       112,010         93,736         96,995"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "a18": {
+      "question": "2025 财年苹果的稀释每股收益是多少美元？",
+      "answerable": true,
+      "status": "verified",
+      "review_note": "This question requires two existing chunks under strict period-context labeling.32:3 contains dilutedsharecount, not dilutedEPS.",
+      "requirements": [
+        {
+          "id": "diluted_eps_period_units",
+          "description": "FY2025 dilutedEPSUSD7.46, not basicEPS7.49 or share counts.",
+          "status": "verified",
+          "alternatives": [
+            {
+              "review_note": "Operations-statement EPSrow in32:2 needs year/US-dollar/per-share header32:0.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:0",
+                  "excerpt": "Years ended\n\n                                                                    September 27,   September 28,   September 30,\n                                                                          2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:32:2",
+                  "excerpt": "Earnings per share:\n\n    Basic                                                      $        7.49  $        6.11  $        6.16\n\n    Diluted                                                     $        7.46  $        6.08  $        6.13"
+                }
+              ]
+            },
+            {
+              "review_note": "EPScomputation39:3 needs2025/2024/2023 header39:2; footer2025 Form10K alone does not establish its first column.",
+              "pieces": [
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:2",
+                  "excerpt": "The following table shows the computation of basic and diluted earnings per share for 2025, 2024 and 2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:2",
+                  "excerpt": "2025            2024            2023"
+                },
+                {
+                  "chunk_id": "3eb270b22acb7d8d8e9c32a43dc221dec3345f8e4bca02755fdbc1ee16c823de:39:3",
+                  "excerpt": "Diluted earnings per share                                         $        7.46  $        6.08  $        6.13"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "u01": {
+      "question": "What will Apple's exact total net sales be in fiscal 2026?",
+      "answerable": false,
+      "status": "not_applicable",
+      "review_note": "No positive supporting-evidence label: deliberate unanswerable question in frozen benchmark.",
+      "requirements": []
+    },
+    "u02": {
+      "question": "What was Apple Vision Pro's standalone net sales in FY2025, excluding all other products?",
+      "answerable": false,
+      "status": "not_applicable",
+      "review_note": "No positive supporting-evidence label: deliberate unanswerable question in frozen benchmark.",
+      "requirements": []
+    },
+    "u03": {
+      "question": "苹果 2025 财年一共卖出了多少台 iPhone？请给出准确出货量。",
+      "answerable": false,
+      "status": "not_applicable",
+      "review_note": "No positive supporting-evidence label: deliberate unanswerable question in frozen benchmark.",
+      "requirements": []
+    },
+    "u04": {
+      "question": "What was Microsoft Azure's FY2025 revenue in USD millions?",
+      "answerable": false,
+      "status": "not_applicable",
+      "review_note": "No positive supporting-evidence label: deliberate unanswerable question in frozen benchmark.",
+      "requirements": []
+    },
+    "u05": {
+      "question": "What was Apple's closing stock price on December 31, 2025?",
+      "answerable": false,
+      "status": "not_applicable",
+      "review_note": "No positive supporting-evidence label: deliberate unanswerable question in frozen benchmark.",
+      "requirements": []
+    },
+    "u06": {
+      "question": "苹果 2025 财年用于训练生成式 AI 模型的总成本是多少美元？",
+      "answerable": false,
+      "status": "not_applicable",
+      "review_note": "No positive supporting-evidence label: deliberate unanswerable question in frozen benchmark.",
+      "requirements": []
+    }
+  }
+}

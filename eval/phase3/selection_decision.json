@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "selected": "optimized",
+  "development_runs_completed": 3,
+  "paired_question_executions": 144,
+  "decision_basis": "All 144 final answers inspected against the unchanged gold rubric. Each baseline run answers 17/24 correctly; each candidate run answers 20/24 correctly. a06, a11 and a16 improve in all three repeats, with no correctness regression among the other 21 questions. Retrieval-only comparison gives no evidence-recall benefit for hybrid over dense at the same k.",
+  "selected_configuration": "Dense Top5; unchanged cosine threshold0.35 and16000-character ceiling; generic completeness/table-copy prompt; unchanged citation validator; zero repair retries.",
+  "limitations": "Same small development set, agent-assisted non-blind adjudication; Top5 supplies more context, and prompt changes are a bundled intervention. No statistical-significance or generalizability claim. a18 still lacks a verified table-year-header bundle despite a numerically correct answer.",
+  "holdout_policy": "Selection made before any holdout query embedding, retrieval evaluation or chat generation. Preserve the selected implementation hashes and do not tune after observing holdout outputs."
+}

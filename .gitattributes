@@ -1,0 +1,14 @@
+# Normalize ordinary source/docs, but preserve every recorded experiment hash.
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+
+# These paths must survive checkout byte-for-byte, including core.autocrlf=true.
+eval/results/** -text
+eval/phase3/** -text
+eval/dataset.json -text
+src/research_qa/qa.py -text
+src/research_qa/retrieval.py -text
+src/research_qa/index.py -text
+src/research_qa/ingestion.py -text
+uv.lock -text

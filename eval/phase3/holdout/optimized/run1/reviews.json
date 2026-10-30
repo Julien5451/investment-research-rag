@@ -1,0 +1,50 @@
+{
+  "h01": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. The frozen reference requires FY2025 total revenue including membership fees, USD 275,235 million; the final answer supplies no total."
+  },
+  "h02": {
+    "correct": true,
+    "note": "Correct FY2025 net income, USD 8,099 million. The alternative comprehensive-income statement on physical page 42 repeats the figure from gold page 41; the selected source supplies the relevant row and financial context."
+  },
+  "h03": {
+    "correct": true,
+    "note": "Correct complete geographical assignment: renewal was 92.3% in the U.S. and Canada and 89.8% worldwide at fiscal 2025 year end."
+  },
+  "h04": {
+    "correct": true,
+    "note": "Correct complete explanation: new member sign-ups and membership fee increases. The added 10% growth figure is explicitly present in the cited FY2025 source sentence, so it is supported rather than an invented cause."
+  },
+  "h05": {
+    "correct": true,
+    "note": "Correct all three requested figures with proper labels: 27 openings, including three relocations, giving 24 net new warehouses during FY2025."
+  },
+  "h06": {
+    "correct": true,
+    "note": "Correct approximately 73.6% Executive-member sales penetration of worldwide net sales during FY2025. English wording on a Chinese question does not alter factual correctness under the fixed rubric."
+  },
+  "h07": {
+    "correct": true,
+    "note": "Correct both reported FY2025 year-end counts and their units: paid members 81,000 thousand and total cardholders 145,200 thousand. The answer does not incorrectly describe these as active-only counts; the preparation rubric explicitly makes the accompanying expired-membership qualification optional."
+  },
+  "h08": {
+    "correct": true,
+    "note": "Correct complete core explanation: high sales volume, rapid inventory turnover and operating efficiencies from volume purchasing, efficient distribution and reduced handling. The additional lower-labor-cost, shorter-hours and merchandise-storage explanation is supported by the full retrieved S1 paragraph, including its sentence that rack/pallet storage reduces labor. The extra storage sentence is in S1 even though the selected quote is shorter."
+  },
+  "h09": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable scoped workforce question. The reference is approximately 94% retention in the U.S. and Canada for employees with at least one year of service during 2025."
+  },
+  "h10": {
+    "correct": true,
+    "note": "Correct explicit abstention: the uploaded 2025 report cannot establish exact actual net income for future FY2027."
+  },
+  "h11": {
+    "correct": true,
+    "note": "Correct explicit abstention: the report does not disclose an exact standalone FY2025 rotisserie-chicken net profit margin."
+  },
+  "h12": {
+    "correct": true,
+    "note": "Correct explicit abstention: Walmart+ active paying membership is outside the uploaded Costco annual-report corpus."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "a01": {
+    "correct": true,
+    "note": "Correct exact fiscal-year end date: September 27, 2025. The alternative source on page 80 supports the date, despite annotated page 1 not being retrieved."
+  },
+  "a02": {
+    "correct": true,
+    "note": "Correct operating system: macOS. The final claim agrees with the source on physical page 4."
+  },
+  "a03": {
+    "correct": true,
+    "note": "Correct complete list of all five geographic segments: Americas, Europe, Greater China, Japan and Rest of Asia Pacific."
+  },
+  "a04": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. The frozen gold specifies direct channels 40% and indirect channels 60%; the final answer supplies neither value."
+  },
+  "a05": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. The reference specifies approximately 166,000 full-time equivalent employees as of September 27, 2025."
+  },
+  "a06": {
+    "correct": false,
+    "note": "Incomplete final answer: the first fiscal quarter is correct, but the explicitly requested seasonal holiday-demand explanation is absent from claim text. Including the reason only in a quote does not satisfy the answer rubric."
+  },
+  "a07": {
+    "correct": true,
+    "note": "Correct complete explanation: lower iPhone net sales in Greater China during FY2025 versus FY2024, partially offset by higher Mac net sales."
+  },
+  "a08": {
+    "correct": true,
+    "note": "Correct complete list of the three Services-sales drivers: advertising, the App Store and cloud services. The fiscal-year scope agrees with the question."
+  },
+  "a09": {
+    "correct": true,
+    "note": "Correct FY2025 iPhone net sales: USD 209,586 million. Amount, currency, units and reporting period match the reference."
+  },
+  "a10": {
+    "correct": true,
+    "note": "Correct FY2025 Mac net sales: USD 33,708 million. English versus Chinese wording does not alter the factual amount, units or period."
+  },
+  "a11": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. The captured generation gives the correct 75.4%, but synthesizes a noncontiguous table label in its quote; the validator rejects that quote."
+  },
+  "a12": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. The requested total FY2025 gross-margin percentage is 46.9%, but no value is supplied."
+  },
+  "a13": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. FY2025 R&D expense is USD 34,550 million; retrieval of another chunk from the same page does not establish that the relevant financial row reached context."
+  },
+  "a14": {
+    "correct": true,
+    "note": "Correct two requested drivers: increases in headcount-related expenses and infrastructure-related costs. No unsupported additional cause appears in the final answer."
+  },
+  "a15": {
+    "correct": true,
+    "note": "Correct FY2025 effective tax rate: 15.6%, supported by the page 28 table."
+  },
+  "a16": {
+    "correct": false,
+    "note": "Incorrect refusal on an answerable question. The captured raw generation incorrectly adds only cash and money-market-fund rows to claim USD 33.539 billion and omits an intervening block from its quote. Validation rejects it; no correct end-to-end answer is delivered."
+  },
+  "a17": {
+    "correct": true,
+    "note": "Correct FY2025 net income: USD 112,010 million. The alternative statement/EPS-note source agrees with the frozen reference."
+  },
+  "a18": {
+    "correct": true,
+    "note": "Correct FY2025 diluted earnings per share: USD 7.46. Evidence-header coverage is measured separately and does not retroactively change the Phase 2 answer-correctness rubric."
+  },
+  "u01": {
+    "correct": true,
+    "note": "Correct explicit abstention: the 2025 annual report does not establish exact future FY2026 net sales."
+  },
+  "u02": {
+    "correct": true,
+    "note": "Correct explicit abstention: standalone Vision Pro FY2025 net sales are not separately disclosed in the corpus."
+  },
+  "u03": {
+    "correct": true,
+    "note": "Correct explicit abstention: exact FY2025 iPhone unit shipments are not disclosed; revenue is not a unit shipment count."
+  },
+  "u04": {
+    "correct": true,
+    "note": "Correct explicit abstention: Microsoft Azure FY2025 revenue is outside the uploaded Apple annual report."
+  },
+  "u05": {
+    "correct": true,
+    "note": "Correct explicit abstention: the requested December 31, 2025 closing stock price is not in the annual-report corpus; a total-return index value would not answer the question."
+  },
+  "u06": {
+    "correct": true,
+    "note": "Correct explicit abstention: total generative-AI model training costs are not separately disclosed; aggregate R&D expense cannot substitute for them."
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "name": "Costco FY2025 independent-company holdout / 12 questions",
+  "description": "Holdout authored from the official public Costco FY2025 annual report and verified source pages, without running retrieval or chat models against these questions. 9 answerable and 3 unanswerable. Not used to select retrieval parameters, context budgets, citation behavior or prompts. Physical PDF pages are 1-based. Authoring time (Asia/Shanghai): 2026-10-30T04:38:45.127499+08:00",
+  "documents": [
+    {
+      "document_name": "costco_2025.pdf",
+      "url": "https://s201.q4cdn.com/287523651/files/doc_financials/2025/ar/COST-Annual-Report-2025.pdf",
+      "sha256": "25449d39bb369341789c0060e408805eac93c63e2a3a345dd3fae9b8307e72bc",
+      "company": "Costco Wholesale Corporation",
+      "fiscal_year": 2025,
+      "pages": 76,
+      "source_page": "https://investor.costco.com/overview/"
+    }
+  ],
+  "questions": [
+    {
+      "id": "h01",
+      "question": "What was Costco's total revenue in fiscal 2025, including membership fees, in USD millions?",
+      "answerable": true,
+      "reference_answer": "USD 275,235 million of total revenue, including net sales and membership fees.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 41,
+          "quote": "Total revenue  . . . . . . . . . . . . . . . . . . . . . . . . .           275,235            254,453            242,290"
+        }
+      ],
+      "required_patterns": [
+        "275,?235|275\\.235"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "h02",
+      "question": "What was Costco's fiscal 2025 net income, in USD millions?",
+      "answerable": true,
+      "reference_answer": "USD 8,099 million.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 41,
+          "quote": "NET INCOME . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $           8,099  $           7,367  $           6,292"
+        }
+      ],
+      "required_patterns": [
+        "8,?099|8\\.099"
+      ],
+      "category": "financial_table"
+    },
+    {
+      "id": "h03",
+      "question": "At the end of fiscal 2025, what were Costco's membership renewal rates in the U.S. and Canada, and worldwide?",
+      "answerable": true,
+      "reference_answer": "92.3% in the U.S. and Canada, and 89.8% worldwide.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 12,
+          "quote": "Our member renewal rate was 92.3% in the U.S. and Canada and 89.8% worldwide at the end of 2025."
+        }
+      ],
+      "required_patterns": [
+        "92\\.3\\s*[%％]",
+        "89\\.8\\s*[%％]"
+      ],
+      "category": "membership_metrics"
+    },
+    {
+      "id": "h04",
+      "question": "Why did Costco's membership fee revenue increase in 2025?",
+      "answerable": true,
+      "reference_answer": "It increased because of new member sign-ups and membership fee increases.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 31,
+          "quote": "Membership fee revenue increased 10% in 2025, driven by new member sign-ups and membership fee increases."
+        }
+      ],
+      "required_patterns": [
+        "new member|sign[- ]?ups?|新会员|新增会员",
+        "fee increases?|higher fees?|会费上涨|会费提高|提高会费|会员费增加"
+      ],
+      "category": "management_explanation"
+    },
+    {
+      "id": "h05",
+      "question": "How many warehouses did Costco open in fiscal 2025, how many of those were relocations, and how many were net new warehouses?",
+      "answerable": true,
+      "reference_answer": "27 warehouse openings included 3 relocations, resulting in 24 net new warehouses.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 30,
+          "quote": "We opened 27 new warehouses, including three relocations, for a total of 24 net new warehouses:"
+        }
+      ],
+      "required_patterns": [
+        "27",
+        "three|3",
+        "24"
+      ],
+      "category": "warehouse_operations"
+    },
+    {
+      "id": "h06",
+      "question": "2025 财年，Costco 的 Executive 会员销售额占全球净销售额的比例约为多少？",
+      "answerable": true,
+      "reference_answer": "Approximately 73.6% of worldwide net sales.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 12,
+          "quote": "The sales penetration of Executive members represented approximately 73.6% of worldwide net sales in 2025."
+        }
+      ],
+      "required_patterns": [
+        "73\\.6\\s*[%％]"
+      ],
+      "category": "membership_metrics"
+    },
+    {
+      "id": "h07",
+      "question": "根据年报，2025 年末 Costco 报告的付费会员总数和持卡人总数分别是多少（以千为单位）？",
+      "answerable": true,
+      "reference_answer": "81,000 thousand total paid members and 145,200 thousand total cardholders. The reported membership counts include active memberships and some expired memberships not renewed within the prior 12 months.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 12,
+          "quote": "Total paid members1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    81,000     76,200     71,000"
+        },
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 12,
+          "quote": "Total cardholders  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   145,200    136,800    127,900"
+        }
+      ],
+      "required_patterns": [
+        "81,?000|81\\s*million|8,?100\\s*万",
+        "145,?200|145\\.2\\s*million|14,?520\\s*万"
+      ],
+      "category": "membership_table"
+    },
+    {
+      "id": "h08",
+      "question": "How does Costco explain being able to operate profitably at significantly lower gross margins than most other retailers?",
+      "answerable": true,
+      "reference_answer": "High sales volumes and rapid inventory turnover, combined with operating efficiencies from volume purchasing, efficient distribution and reduced merchandise handling in no-frills self-service warehouses, allow it to remain profitable at lower gross margins.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 10,
+          "quote": "We operate membership warehouses and e-commerce sites based on the concept that offering low prices on a limited selection of nationally-branded and private-label products in a wide range of categories will produce high sales volumes and rapid inventory turnover. When combined with the operating efficiencies achieved by volume purchasing, efficient distribution and reduced handling of merchandise in no-frills, self-service warehouse facilities, these volumes and turnover enable us to operate profitably at significantly lower gross margins (net sales less merchandise costs) than most other retailers."
+        }
+      ],
+      "required_patterns": [
+        "high sales|sales volumes?|销售量|销售规模",
+        "inventory turnover|库存周转",
+        "efficien|volume purchasing|distribution|handling|运营效率|规模采购|分销|处理成本"
+      ],
+      "category": "business_model_explanation"
+    },
+    {
+      "id": "h09",
+      "question": "What was Costco's 2025 retention rate in the U.S. and Canada for employees who had been with the company for at least one year?",
+      "answerable": true,
+      "reference_answer": "Approximately 94%.",
+      "evidence": [
+        {
+          "document_name": "costco_2025.pdf",
+          "page": 13,
+          "quote": "In 2025, in the U.S. and Canada that rate was approximately 94% for employees who have been with us for at least one year."
+        }
+      ],
+      "required_patterns": [
+        "94\\s*[%％]"
+      ],
+      "category": "workforce_metrics"
+    },
+    {
+      "id": "h10",
+      "question": "What will Costco's exact actual net income be in fiscal 2027, in USD millions?",
+      "answerable": false,
+      "reference_answer": "The uploaded 2025 annual report cannot establish exact actual net income for future fiscal 2027; abstain.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "future_information"
+    },
+    {
+      "id": "h11",
+      "question": "What was the exact standalone net profit margin on Costco's rotisserie chicken in fiscal 2025?",
+      "answerable": false,
+      "reference_answer": "The uploaded annual report does not separately disclose the exact standalone net profit margin of rotisserie chicken; abstain.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "undisclosed_product_metric"
+    },
+    {
+      "id": "h12",
+      "question": "How many active paying Walmart+ members did Walmart have at the end of fiscal 2025?",
+      "answerable": false,
+      "reference_answer": "The uploaded Costco annual report does not provide Walmart's active paying Walmart+ membership count; abstain.",
+      "evidence": [],
+      "required_patterns": [],
+      "category": "out_of_corpus"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "question_id": "a08",
+  "context": {
+    "question": "According to the 2025 report, which three areas primarily drove higher Services net sales?",
+    "evidence": [
+      {
+        "source_id": "S1",
+        "document_name": "apple_2025_10k.pdf",
+        "page": 26,
+        "text": "Total net sales                            $   416,161        6 % $   391,035        2 % $   383,285\n\n\n      (1)  Services net sales include amortization of the deferred value of services bundled in the sales price of certain products.\n\n\niPhone\n\niPhone net sales increased during 2025 compared to 2024 due to higher net sales of Pro models.\n\n\nMac\n\nMac net sales increased during 2025 compared to 2024 primarily due to higher net sales of laptops and desktops.\n\n\niPad\n\niPad net sales increased during 2025 compared to 2024 primarily due to higher net sales of iPad Air, iPad mini and iPad, partially\noffset by lower net sales of iPad Pro.\n\n\nWearables, Home and Accessories\n\nWearables, Home and Accessories net sales decreased during 2025 compared to 2024 primarily due to lower net sales of\nAccessories and Wearables.\n\n\nServices\n\nServices net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store\nand cloud services."
+      },
+      {
+        "source_id": "S2",
+        "document_name": "apple_2025_10k.pdf",
+        "page": 26,
+        "text": "Products and Services Performance\n\nThe following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):\n\n                                                      2025       Change        2024       Change        2023\n\n iPhone                                      $   209,586        4 % $   201,183    — % $   200,583\n\nMac                                                 33,708       12 %       29,984        2 %       29,357\n\n iPad                                                 28,023        5 %       26,694          (6)%       28,300\n\n Wearables, Home and Accessories                      35,686          (4)%       37,005          (7)%       39,845\n\n Services (1)                                          109,158       14 %       96,169       13 %       85,200\n\n     Total net sales                            $   416,161        6 % $   391,035        2 % $   383,285"
+      },
+      {
+        "source_id": "S3",
+        "document_name": "apple_2025_10k.pdf",
+        "page": 26,
+        "text": "Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store\nand cloud services.\n\n\n\n\n\n                                                 Apple Inc. | 2025 Form 10-K | 23"
+      }
+    ]
+  },
+  "raw_model_content": "{\"abstained\": false, \"claims\": [{\"text\": \"Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store and cloud services.\", \"evidence\": [{\"source_id\": \"S3\", \"quote\": \"Services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the App Store and cloud services.\"}]}]}",
+  "validated_response": {
+    "answer": "Insufficient evidence in the uploaded documents to answer this question.",
+    "abstained": true,
+    "citations": [],
+    "reason": "unverifiable_citation"
+  },
+  "note": "Separate diagnostic request after baseline."
+}

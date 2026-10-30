@@ -1,0 +1,10 @@
+{
+  "publishable_files_checked": 167,
+  "ignore_probes": 8,
+  "all_ignore_probes_passed": true,
+  "frozen_byte_probes": 5,
+  "all_frozen_bytes_preserved_with_autocrlf": true,
+  "findings": [],
+  "scope": "Prospective files selected by Git ignore rules; configured secrets and common API-key patterns checked without printing their values. Not a general PII detector or audit of pre-existing Git history.",
+  "git_actions": "No project git init, staging, commit, remote creation or push performed."
+}

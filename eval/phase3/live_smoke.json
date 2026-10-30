@@ -1,0 +1,36 @@
+{
+  "mode": "live",
+  "transport": "FastAPI TestClient HTTP + real remote model APIs",
+  "upload": {
+    "status_code": 201,
+    "document_id": "b4e22fbf6b7b4e74b790d4b50ba9c9f3",
+    "document_name": "apple_2025_10k.pdf",
+    "pages": 80,
+    "chunks": 467,
+    "elapsed_seconds": 12.690430472001026
+  },
+  "grounded_answer": {
+    "answer": "Historically, Apple has experienced higher net sales in its first fiscal quarter compared to other quarters due to seasonal holiday demand. [S3]",
+    "abstained": false,
+    "citations": [
+      {
+        "source_id": "S3",
+        "document_id": "b4e22fbf6b7b4e74b790d4b50ba9c9f3",
+        "document_name": "apple_2025_10k.pdf",
+        "page": 7,
+        "chunk_id": "b4e22fbf6b7b4e74b790d4b50ba9c9f3:7:1",
+        "quote": "The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in\npart to seasonal holiday demand.",
+        "relevance_score": 0.623241
+      }
+    ],
+    "reason": null
+  },
+  "explicit_abstention": {
+    "answer": "Insufficient evidence in the uploaded documents to answer this question.",
+    "abstained": true,
+    "citations": [],
+    "reason": "model_insufficient_evidence"
+  },
+  "invalid_upload_status": 415,
+  "checks_passed": true
+}

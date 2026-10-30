@@ -1,0 +1,18 @@
+{
+  "eval/dataset.json": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+  "eval/results/baseline/dataset.json": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+  "eval/results/baseline/metadata.json": "f3b848bfdcba4f75a5db31eace7c6526aa9d7c82435104b31f75d074161c5b92",
+  "eval/results/baseline/quote_diagnostic.json": "0e9bd032a054144cfa493ebd063d45196a00342561c4a8dc431df3faee256953",
+  "eval/results/baseline/report.md": "1d71f45ed4ee199ac991fb9729de72da5b20619bb92615336b6c4fa6a52c6c2a",
+  "eval/results/baseline/responses.jsonl": "f92d78d11b084ced003a8188ea9b1d397469f8743127f3e70ec3363398e23f95",
+  "eval/results/baseline/results.csv": "94705e83ec2d691d840f1456a4f3b00bad4a30aea50edb8bcaf7117fb165eeaf",
+  "eval/results/baseline/reviews.json": "ac3fa34f5d99f707519e7dabc704c33865b1a999de0180adb96f1ef761bdecdc",
+  "eval/results/baseline/summary.json": "2ccee15594b4421d864f31fc0ec550fd8a377193f8820f37ad136d727fc200ce",
+  "eval/results/latest/dataset.json": "0f128ddd97e0c82b3c6cac7146b6c97d17672aacebfd107c4c47904ab4a3ebfd",
+  "eval/results/latest/metadata.json": "de2eff8e0cdb4c23e9c8a7006b92092a73d84f7bab4ed4961efa57cf323ca2c1",
+  "eval/results/latest/report.md": "ea7bbb17dd2b4a939802083bc76ffe577aea745e77c959128123fc2510915834",
+  "eval/results/latest/responses.jsonl": "13d2565b81008ea1e98b6072fbee739610752d55d7614ef8bb2f9ccce7efb6a9",
+  "eval/results/latest/results.csv": "8bee259c116f1756fa1931ca63a108d06e6ee5b25d098343c862f0f70bb548bf",
+  "eval/results/latest/reviews.json": "2c0b81a85e96bcda8d52314cb25b497326490124fd94a93992a31850e8b1212d",
+  "eval/results/latest/summary.json": "82421e0d7d988cda8cf46b3c9ff54525cafad5bd4a5a310aa92f9839df28f123"
+}

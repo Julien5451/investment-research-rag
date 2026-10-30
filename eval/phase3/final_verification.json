@@ -1,0 +1,40 @@
+{
+  "verified_at_shanghai": "2026-10-30T05:26:02.042101+08:00",
+  "pytest": {
+    "passed": 224,
+    "duration_seconds": 80.06,
+    "command": "uv run --extra dev --extra demo pytest -q"
+  },
+  "ruff_lint": "All checks passed",
+  "ruff_format": {
+    "already_formatted_files": 39
+  },
+  "phase2_frozen_artifacts_verified": 16,
+  "selected_pipeline_hashes_unchanged_after_holdout": true,
+  "live_route_smoke_passed": true,
+  "browser_verified": [
+    "backendhealth467chunks",
+    "defaultTop5",
+    "completeanswerwithholidayreason",
+    "physicalpage7andverbatimquote",
+    "EvidenceRecall5and24questionsx3trialslabels"
+  ],
+  "screenshots": [
+    "docs/phase3-demo-qa.jpg",
+    "docs/phase3-demo-metrics.jpg"
+  ],
+  "project_git_initialized": false,
+  "github_push_performed": false,
+  "fresh_clone_embedding_only_bootstrap": {
+    "focused_tests_passed": 18,
+    "existing_index_verified_chunks": 467,
+    "incomplete_index_fail_closed": true,
+    "chat_calls": 0
+  },
+  "publishability": {
+    "files_checked": 167,
+    "ignore_probes_passed": 8,
+    "autocrlf_byte_probes_passed": 5,
+    "credential_findings": 0
+  }
+}
