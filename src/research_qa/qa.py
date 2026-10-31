@@ -34,7 +34,11 @@ Return ONLY one JSON object, without Markdown fences, with this exact schema:
 {"abstained": false, "claims": [{"text": "One supported factual claim.",
 "evidence": [{"source_id": "S1", "quote": "exact verbatim passage from S1"}]}]}
 Every claim must have evidence. Quotes must be verbatim contiguous excerpts of the
-source text, 8 to 1000 characters. Do not put citation markers in claim text; the
+source text, 8 to 1000 characters. One claim may have multiple evidence objects.
+For noncontiguous supporting passages, use a separate evidence object for each
+passage, even if they share a source_id. Never join separate passages into one
+quote or use ellipses to bridge omitted source text.
+Do not put citation markers in claim text; the
 server adds them. Cite only supplied source IDs. Each claim must actually follow
 from its quoted evidence. For insufficient evidence return:
 {"abstained": true, "claims": []}.
